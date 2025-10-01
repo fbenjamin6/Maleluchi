@@ -12,6 +12,8 @@
   "dependencies": {
     "@fontsource-variable/baloo-2": "^5.2.7",
     "@fontsource/fredoka-one": "^5.2.5",
+    "@react-spring/parallax": "^10.0.3",
+    "@react-spring/web": "^10.0.3",
     "@tailwindcss/vite": "^4.1.13",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

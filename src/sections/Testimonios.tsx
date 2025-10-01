@@ -16,7 +16,7 @@ export function Testimonios() {
       <div className='carouselWrapper'>
         <div className='carousel flex gap-6 '>
           {[1, 2, 3].map((n) => {
-            return <TestimonioCard id={n} />
+            return <TestimonioCard id={n} key={n} />
           })}
         </div>
       </div>
