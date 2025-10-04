@@ -1,4 +1,12 @@
-export function Header() {
+import { Parallax } from '@react-spring/parallax'
+
+export function Header({
+  parallaxScroll,
+  calculateOffset,
+}: {
+  parallaxScroll: (n: number) => void
+  calculateOffset: (section: number) => number
+}) {
   return (
     <>
       <header className=' w-full h-20 fixed flex z-50 justify-center'>
@@ -10,36 +18,36 @@ export function Header() {
           />
           <ul className='flex gap-8 fredoka '>
             <li className=''>
-              <a
-                href='#nosotros'
+              <button
+                onClick={() => parallaxScroll(calculateOffset(1))}
                 className='text-white hover:text-[#F5B501] transition-colors duration-200'
               >
                 SOBRE NOSOTROS
-              </a>
+              </button>
             </li>
             <li className=''>
-              <a
-                href='#juegos'
+              <button
+                onClick={() => parallaxScroll(calculateOffset(2))}
                 className='text-white hover:text-[#F5B501] transition-colors duration-200'
               >
                 JUEGOS
-              </a>
+              </button>
             </li>
             <li className=''>
-              <a
-                href='#preguntas'
+              <button
+                onClick={() => parallaxScroll(calculateOffset(4))}
                 className='text-white hover:text-[#F5B501] transition-colors duration-200'
               >
                 PREGUNTAS FRECUENTES
-              </a>
+              </button>
             </li>
             <li className=''>
-              <a
-                href='#contacto'
+              <button
+                onClick={() => parallaxScroll(calculateOffset(5))}
                 className='text-white hover:text-[#F5B501] transition-colors duration-200'
               >
                 CONTACTO
-              </a>
+              </button>
             </li>
           </ul>
         </nav>

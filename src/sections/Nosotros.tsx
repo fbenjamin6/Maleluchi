@@ -1,6 +1,6 @@
 export function Nosotros() {
   return (
-    <section className='flex gap-10 items-center flex-col  pt-0!'>
+    <section id='nosotros' className='flex gap-10 items-center flex-col  '>
       <h2
         data-text='¿QUIÉNES SOMOS?'
         className='fredoka text-4xl text-orange reborde relative'

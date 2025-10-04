@@ -14,7 +14,9 @@ export function PreguntaAcordeon({
 
   return (
     <div
-      className={`flex flex-col bg-[#FFFCF2] rounded-2xl w-full p-5 gap-2.5 transition-all duration-400 cursor-pointer border-2 border-black/15 shadow-[0_4px_4px_rgba(0,0,0,0.25)] overflow-hidden h-[var(--h)] `}
+      className={`flex flex-col rounded-2xl w-full p-5 gap-2.5 transition-all duration-400 cursor-pointer border-2 border-black/15 shadow-[0_4px_4px_rgba(0,0,0,0.25)] overflow-hidden h-[var(--h)]  ${
+        isOpen ? 'bg-[#FDE4A0]' : 'bg-[#FFFCF2]'
+      }`}
       style={{ ['--h' as any]: isOpen ? `${pHeight + 74 + 5}px` : '74px' }}
       onClick={() => openHandler({ id })}
     >
@@ -32,8 +34,8 @@ export function PreguntaAcordeon({
         />
       </div>
       <div
-        className={`transition-all relative duration-400 rotate ${
-          isOpen ? 'opacity-100 top-0' : 'opacity-0 -top-10'
+        className={`transition-all relative duration-400  rotate ${
+          isOpen ? 'opacity-100 top-0' : 'opacity-0 -top-6.5'
         }`}
         ref={pRef}
       >
