@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from 'react'
 export function useParallax() {
   const parallaxRef = useRef<IParallax>(null)
   const [totalPages, setTotalPages] = useState(0)
-  const pagesFactor = [0.8, 0.5, 1, 1, 1]
+  const pagesFactor = [0.8, 0.5, 1, 1, 0.95, 1.05, 0.3]
 
   useEffect(() => {
     let newTotalPages = 0

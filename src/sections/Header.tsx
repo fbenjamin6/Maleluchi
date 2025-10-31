@@ -9,10 +9,10 @@ export function Header({
 }) {
   return (
     <>
-      <header className=' w-full h-20 fixed flex z-50 justify-center'>
+      <header className=' w-full h-[70px] fixed flex z-50 justify-center bg-neutral-300/25'>
         <nav className='max-w-[1000px] w-full justify-between items-center flex'>
           <img
-            className='w-16'
+            className='w-[60px]'
             src='./src/assets/logoMaleluchi.png'
             alt='Logo de Maleluchi'
           />

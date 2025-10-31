@@ -80,3 +80,20 @@ section {
   grid-auto-rows: minmax(220px, auto);
   grid-template-columns: repeat(4, 1fr);
 }
+
+@media screen and (max-width: 700px) {
+  .cardsGrid {
+    grid-auto-rows: minmax(220px, auto);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#hero .reborde-sm::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: #4ba9e7;
+  -webkit-text-stroke: 10px #4ba9e7;
+}

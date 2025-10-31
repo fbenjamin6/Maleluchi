@@ -15,7 +15,7 @@ export function Testimonios() {
       </div>
       <div className='sliderWrapper'>
         <div className='slider flex gap-6 '>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => {
+          {[1, 2, 3].map((n) => {
             return <TestimonioCard id={n} key={n} />
           })}
         </div>

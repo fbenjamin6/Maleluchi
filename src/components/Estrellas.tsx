@@ -55,6 +55,21 @@ export function Estrellas({
           className='opacity-70'
         />
       </ParallaxLayer>
+
+      <ParallaxLayer offset={calculateOffset(5)} speed={-0.14}>
+        <img
+          src='./src/assets/estrellasChicasAlta.svg'
+          alt=''
+          className='opacity-100'
+        />
+      </ParallaxLayer>
+      <ParallaxLayer offset={calculateOffset(5)} speed={-0.14}>
+        <img
+          src='./src/assets/estrellasGrandesAlta.svg'
+          alt=''
+          className='opacity-100'
+        />
+      </ParallaxLayer>
     </>
   )
 }
