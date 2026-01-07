@@ -80,6 +80,7 @@ function App() {
             offset={calculateOffset(2)}
             factor={pagesFactor[2]}
             speed={0}
+            className='h-[300px]'
           >
             <Juegos />
           </ParallaxLayer>

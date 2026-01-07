@@ -9,7 +9,7 @@ export function Preguntas() {
       <div className='flex flex-col items-center'>
         <h2
           data-text='PREGUNTAS FRECUENTES'
-          className='fredoka text-4xl text-orange reborde relative mb-3.5'
+          className='fredoka text-2xl sm:text-3xl xl:text-4xl text-orange reborde relative mb-3.5'
         >
           PREGUNTAS FRECUENTES
         </h2>

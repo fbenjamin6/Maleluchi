@@ -4,7 +4,7 @@ export function Contacto() {
       <section className='flex gap-10 items-center flex-col  '>
         <h2
           data-text='CONTACTO'
-          className='fredoka text-4xl text-orange reborde relative '
+          className='fredoka text-2xl sm:text-3xl xl:text-4xl text-orange reborde relative '
         >
           CONTACTO
         </h2>

@@ -6,7 +6,7 @@ export function Juegos() {
       <div className='flex flex-col gap-3 items-center'>
         <h2
           data-text='NUESTROS JUEGOS'
-          className='fredoka text-4xl text-orange reborde relative'
+          className='fredoka text-2xl sm:text-3xl xl:text-4xl text-orange reborde relative'
         >
           NUESTROS JUEGOS
         </h2>
@@ -20,7 +20,7 @@ export function Juegos() {
           return (
             <article
               key={id}
-              className={`w-full bg-[url(${image})] bg-cover text-white aspect-square rounded-xl border-4 border-[#FFC625] overflow-hidden flex group drop-shadow-[0px_2px_4px_rgba(0,0,0,0.60)]`}
+              className={`w-full bg-[url(${image})] bg-cover text-white aspect-square rounded-xl border-3 sm:border-4 border-[#FFC625] overflow-hidden flex group drop-shadow-[0px_1px_2px_rgba(0,0,0,0.60)] md:drop-shadow-[0px_2px_4px_rgba(0,0,0,0.60)]`}
               style={{ backgroundImage: `url(${image})` }}
             >
               <div className='bg-black/60 flex flex-col  px-4 pt-1.5 pb-4  transition-all duration-400 group-hover:h-full h-[40px] w-full self-end group-hover:pt-24'>
