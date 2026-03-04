@@ -1,6 +1,10 @@
 import { InstagramIcon, WhatsAppIcon } from '../components/Icons'
 
-export function Footer() {
+export function Footer({
+  parallaxScroll,
+}: {
+  parallaxScroll: (n: number) => void
+}) {
   return (
     <>
       <footer className='max-w-[950px] m-auto  text-white text-[17px]'>
@@ -9,23 +13,65 @@ export function Footer() {
             <div className='flex flex-col gap-2.5'>
               <h4 className='fredoka'>MENU</h4>
               <ul className='flex flex-col gap-2'>
-                <li>SOBRE NOSOTROS</li>
-                <li>NUESTROS JUEGOS</li>
-                <li>PREGUNTAS FRECUENTES</li>
-                <li>CONTACTO</li>
+                <li>
+                  <button
+                    onClick={() => parallaxScroll(1)}
+                    className=' cursor-pointer hover:text-[#F5B501] transition-colors duration-300'
+                  >
+                    SOBRE NOSOTROS
+                  </button>
+                </li>
+
+                <li>
+                  <button
+                    onClick={() => parallaxScroll(2)}
+                    className=' cursor-pointer hover:text-[#F5B501] transition-colors duration-300'
+                  >
+                    NUESTROS JUEGOS
+                  </button>
+                </li>
+
+                <li>
+                  <button
+                    onClick={() => parallaxScroll(4)}
+                    className=' cursor-pointer hover:text-[#F5B501] transition-colors duration-300'
+                  >
+                    PREGUNTAS FRECUENTES
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => parallaxScroll(5)}
+                    className=' cursor-pointer hover:text-[#F5B501] transition-colors duration-300'
+                  >
+                    CONTACTO
+                  </button>
+                </li>
               </ul>
             </div>
 
             <div className='flex flex-col gap-2'>
               <h4 className='fredoka'>CONTACTANOS</h4>
               <ul className='flex flex-col gap-1.5'>
-                <li className='flex gap-1.5 items-center'>
-                  <InstagramIcon />
-                  Instagram
+                <li className=''>
+                  <a
+                    target='_blank'
+                    href='https://www.instagram.com/maleluchi_juegos'
+                    className='flex gap-1.5 items-center hover:text-[#F5B501] transition-colors duration-300'
+                  >
+                    <InstagramIcon />
+                    Instagram
+                  </a>
                 </li>
                 <li className='flex gap-1.5 items-center'>
-                  <WhatsAppIcon />
-                  WhatsApp
+                  <a
+                    target='_blank'
+                    href='https://wa.me/1154170743'
+                    className='flex gap-1.5 items-center hover:text-[#F5B501] transition-colors duration-300'
+                  >
+                    <WhatsAppIcon />
+                    WhatsApp
+                  </a>
                 </li>
               </ul>
             </div>

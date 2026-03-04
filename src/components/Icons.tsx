@@ -61,9 +61,9 @@ export function InstagramIcon() {
       viewBox='0 0 24 24'
       fill='none'
       stroke='currentColor'
-      stroke-width='2'
-      stroke-linecap='round'
-      stroke-linejoin='round'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
     >
       <path stroke='none' d='M0 0h24v24H0z' fill='none' />
       <path d='M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z' />
@@ -82,9 +82,9 @@ export function WhatsAppIcon() {
       viewBox='0 0 24 24'
       fill='none'
       stroke='currentColor'
-      stroke-width='2'
-      stroke-linecap='round'
-      stroke-linejoin='round'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
     >
       <path stroke='none' d='M0 0h24v24H0z' fill='none' />
       <path d='M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9' />
@@ -102,10 +102,10 @@ export function PhoneIcon() {
       viewBox='0 0 24 24'
       fill='none'
       stroke='currentColor'
-      stroke-width='2'
-      stroke-linecap='round'
-      stroke-linejoin='round'
-      className='text-white w-6 h-6 xl:w-7 xl:h-7'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
+      className='text-white w-6 h-6 xl:w-7 xl:h-7 group-hover:scale-105 transition-transform duration-300'
     >
       <path stroke='none' d='M0 0h24v24H0z' fill='none' />
       <path d='M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2' />

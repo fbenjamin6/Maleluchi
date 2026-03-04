@@ -3,6 +3,7 @@ import { NubesContacto } from './components/nubesContacto'
 import { NubesHero } from './components/NubesHero'
 import { useParallax } from './hooks/useParallax'
 import { Contacto } from './sections/Contacto'
+import { Eligieron } from './sections/Eligieron'
 import { Footer } from './sections/Footer'
 import { Header } from './sections/Header'
 import { Hero } from './sections/Hero'
@@ -21,12 +22,19 @@ function App() {
     pagesFactor,
   } = useParallax()
 
+  function testFactorPages() {
+    let total = 0
+    pagesFactor.forEach((n, i) => {
+      if (i === 0 || i === 7) return
+      total += n
+    })
+
+    return total
+  }
+
   return (
     <>
-      <Header
-        parallaxScroll={parallaxScroll}
-        calculateOffset={calculateOffset}
-      />
+      <Header parallaxScroll={parallaxScroll} />
       <main className='min-h-[900px]  h-dvh relative'>
         <Parallax
           ref={parallaxRef}
@@ -37,23 +45,23 @@ function App() {
         >
           <ParallaxLayer
             offset={0.85}
-            factor={calculateOffset(4) + 0.1}
+            factor={calculateOffset(5) + 0.5}
             speed={0}
           >
             <div className='bg-linear-to-b from-[#D1E8F8] to-[#827BC9] h-full w-full -z-50 relative'></div>
           </ParallaxLayer>
 
           <ParallaxLayer
-            offset={calculateOffset(5)}
-            factor={pagesFactor[5]}
+            offset={calculateOffset(6)}
+            factor={pagesFactor[6]}
             speed={0}
           >
             <div className=' bg-[#827BC9] h-full w-full -z-50 relative'></div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={calculateOffset(5)} factor={1} speed={0.5}>
+          {/* <ParallaxLayer offset={calculateOffset(5)} factor={1} speed={0.5}>
             <div className='bg-linear-to-t from-[#2F4090] to-transparent h-full w-full -z-50 relative'></div>
-          </ParallaxLayer>
+          </ParallaxLayer> */}
 
           <Estrellas calculateOffset={calculateOffset} />
 
@@ -65,59 +73,30 @@ function App() {
             speed={0.1}
             className='z-20'
           >
-            <Hero />
+            <Hero parallaxScroll={parallaxScroll} />
           </ParallaxLayer>
 
           <ParallaxLayer
             offset={calculateOffset(1)}
-            factor={pagesFactor[1]}
-            speed={0}
+            factor={() => testFactorPages()}
           >
             <Nosotros />
-          </ParallaxLayer>
-
-          <ParallaxLayer
-            offset={calculateOffset(2)}
-            factor={pagesFactor[2]}
-            speed={0}
-            className='h-[300px]'
-          >
             <Juegos />
-          </ParallaxLayer>
-
-          <ParallaxLayer
-            offset={calculateOffset(3)}
-            factor={pagesFactor[3]}
-            speed={0}
-          >
+            <Eligieron />
             <Testimonios />
-          </ParallaxLayer>
-
-          <ParallaxLayer
-            offset={calculateOffset(4)}
-            factor={pagesFactor[4]}
-            speed={0}
-          >
             <Preguntas />
-          </ParallaxLayer>
-
-          <ParallaxLayer
-            offset={calculateOffset(5)}
-            factor={pagesFactor[5]}
-            speed={0}
-          >
             <Contacto />
           </ParallaxLayer>
 
-          <NubesContacto offset={calculateOffset(6) - pagesFactor[6] * 1.5} />
+          <NubesContacto offset={calculateOffset(7) - pagesFactor[7] * 0.6} />
 
           <ParallaxLayer
-            offset={calculateOffset(6)}
-            factor={pagesFactor[6]}
+            offset={calculateOffset(7)}
+            factor={pagesFactor[7]}
             speed={0}
             style={{ zIndex: 10 }}
           >
-            <Footer />
+            <Footer parallaxScroll={parallaxScroll} />
           </ParallaxLayer>
         </Parallax>
       </main>

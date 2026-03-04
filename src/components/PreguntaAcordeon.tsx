@@ -5,10 +5,14 @@ export function PreguntaAcordeon({
   id,
   isOpen,
   openHandler,
+  pregunta,
+  respuesta,
 }: {
   id: number
   isOpen: boolean
   openHandler: ({ id }: { id: number }) => void
+  pregunta: string
+  respuesta: string
 }) {
   const { pHeight, pRef } = useAccordion()
 
@@ -22,10 +26,10 @@ export function PreguntaAcordeon({
     >
       <div className='flex justify-between'>
         <h4
-          data-text='¿Cuánto tiempo dura el alquiler?'
+          data-text={pregunta}
           className='fredoka reborde-sm text-orange text-xl '
         >
-          ¿Cuánto tiempo dura el alquiler?
+          {pregunta}
         </h4>
         <ChevronArrowUpIcon
           classes={`transition-transform duration-400  ${
@@ -39,11 +43,7 @@ export function PreguntaAcordeon({
         }`}
         ref={pRef}
       >
-        <p>
-          It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised in the 1960s with the release of.Letraset
-        </p>
+        <p>{respuesta}</p>
       </div>
     </div>
   )

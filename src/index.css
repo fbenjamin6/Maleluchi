@@ -6,8 +6,8 @@
 }
 
 :root {
-  font-family: 'Baloo 2 Variable', system-ui, Avenir, Helvetica, Arial,
-    sans-serif;
+  font-family:
+    'Baloo 2 Variable', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -61,16 +61,8 @@ h1 {
 
 section {
   max-width: 950px;
-  padding-top: 110px;
-  padding-bottom: 110px;
   margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media screen and (max-width: 450px) {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
+  padding: 110px 20px;
 }
 
 .cardsGrid {
@@ -99,11 +91,15 @@ section {
   }
 }
 
-@media screen and (max-width: 579px) {
+@media screen and (max-width: 500px) {
   .cardsGrid {
     gap: 6px;
-    grid-auto-rows: minmax(auto, auto);
-    grid-template-columns: repeat(3, 2fr);
+    grid-auto-rows: minmax(110px, auto);
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  section {
+    padding: 80px 12px;
   }
 }
 
@@ -115,11 +111,4 @@ section {
   z-index: -1;
   color: #4ba9e7;
   -webkit-text-stroke: 10px #4ba9e7;
-}
-
-.cardsGrid {
-  @media screen and (max-width: 301px) {
-    grid-auto-rows: minmax(110px, auto);
-    grid-template-columns: repeat(2, 2fr);
-  }
 }

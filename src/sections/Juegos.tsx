@@ -6,11 +6,11 @@ export function Juegos() {
       <div className='flex flex-col gap-3 items-center'>
         <h2
           data-text='NUESTROS JUEGOS'
-          className='fredoka text-2xl sm:text-3xl xl:text-4xl text-orange reborde relative'
+          className='fredoka text-2xl sm:text-3xl xl:text-4xl text-orange reborde relative '
         >
           NUESTROS JUEGOS
         </h2>
-        <p>
+        <p className='text-center max-sm:max-w-92'>
           Lorem Ipsum has been the industry's standard dummy text ever since the
           1500s
         </p>
@@ -23,7 +23,7 @@ export function Juegos() {
               className={`w-full bg-[url(${image})] bg-cover text-white aspect-square rounded-xl border-3 sm:border-4 border-[#FFC625] overflow-hidden flex group drop-shadow-[0px_1px_2px_rgba(0,0,0,0.60)] md:drop-shadow-[0px_2px_4px_rgba(0,0,0,0.60)]`}
               style={{ backgroundImage: `url(${image})` }}
             >
-              <div className='bg-black/60 flex flex-col  px-4 pt-1.5 pb-4  transition-all duration-400 group-hover:h-full h-[40px] w-full self-end group-hover:pt-24'>
+              <div className='bg-black/60 flex flex-col  px-4 pt-1.5 pb-4  transition-all duration-400 group-hover:h-full h-[40px] w-full self-end group-hover:pt-12 sm:group-hover:pt-20 lg:group-hover:pt-24'>
                 <h4 className='text-lg font-medium '>{nombre}</h4>
                 <div className='flex flex-col gap-1.5 -mt-0.5 opacity-0 group-hover:opacity-100 transition-opacity'>
                   <p className='text-gray-300/90 text-sm font-light max-w-20 leading-none'>

@@ -15,20 +15,20 @@ export function Nosotros() {
       >
         ¿QUIÉNES SOMOS?
       </h2>
-      <div className='flex gap-4 flex-col '>
+      <div className='flex gap-4 flex-col text-lg'>
         <p>
-          Somos una empresa familiar dedicada al alquiler de juegos. Tenemos más
-          de <b>14 años de trayectoria</b> creando experiencias inolvidables con
-          nuestros juegos. Nos destacamos por el excelente estado de nuestros
-          juegos y una atención personalizada.
+          Somos una empresa familiar dedicada al alquiler de juegos para
+          cumpleaños, fiestas y todo tipo de eventos. Maleluchi nació hace más
+          de <b>14 años</b> con el objetivo de resolver una necesidad: llevar
+          diversión, alegría y entretenimiento a cada celebración.
         </p>
+
         <p>
-          It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It{' '}
-          <b>was popularised</b> in the 1960s with the release of.Letraset
-          sheets containing Lorem Ipsum passages, and <b>more recently</b> with
-          desktop publishing software like Aldus PageMaker including versions of
-          Lorem Ipsum.
+          Para nosotros, cada evento es un <b>compromiso</b>, y nos lo tomamos
+          con seriedad y responsabilidad. Por eso nos destacamos por el
+          excelente estado de nuestros juegos y por una{' '}
+          <b>atención personalizada</b>, garantizando siempre la seguridad y la
+          diversión de todos los invitados.
         </p>
       </div>
       <div className='absolute right-0 bottom-0 '>
@@ -39,3 +39,8 @@ export function Nosotros() {
     </section>
   )
 }
+
+// Somos una empresa familiar dedicada al alquiler de juegos. Tenemos más
+//           de <b>14 años de trayectoria</b> creando experiencias inolvidables con
+//           nuestros juegos. Nos destacamos por el excelente estado de nuestros
+//           juegos y una atención personalizada.

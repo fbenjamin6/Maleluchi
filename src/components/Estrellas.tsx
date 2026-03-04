@@ -7,7 +7,7 @@ export function Estrellas({
 }) {
   return (
     <>
-      <ParallaxLayer offset={calculateOffset(3) + 0.2} speed={-0.05}>
+      <ParallaxLayer offset={calculateOffset(4) + 0.2} speed={-0.05}>
         <img
           src='./src/assets/estrellasGrandesMedia.svg'
           alt=''
@@ -19,7 +19,7 @@ export function Estrellas({
           className='opacity-30'
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={calculateOffset(3) + 0.2} speed={-0.14}>
+      <ParallaxLayer offset={calculateOffset(4) + 0.2} speed={-0.14}>
         <img
           src='./src/assets/estrellasChicasMedia.svg'
           alt=''
@@ -31,7 +31,7 @@ export function Estrellas({
           className='opacity-40'
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={calculateOffset(4) + 0.2} speed={-0.05}>
+      <ParallaxLayer offset={calculateOffset(5) + 0.2} speed={-0.05}>
         <img
           src='./src/assets/estrellasGrandesMedia.svg'
           alt=''
@@ -43,7 +43,7 @@ export function Estrellas({
           className='opacity-70'
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={calculateOffset(4) + 0.2} speed={-0.14}>
+      <ParallaxLayer offset={calculateOffset(5) + 0.2} speed={-0.14}>
         <img
           src='./src/assets/estrellasChicasMedia.svg'
           alt=''
@@ -56,14 +56,14 @@ export function Estrellas({
         />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={calculateOffset(5)} speed={-0.14}>
+      <ParallaxLayer offset={calculateOffset(6)} speed={-0.14}>
         <img
           src='./src/assets/estrellasChicasAlta.svg'
           alt=''
           className='opacity-100'
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={calculateOffset(5)} speed={-0.14}>
+      <ParallaxLayer offset={calculateOffset(6)} speed={-0.14}>
         <img
           src='./src/assets/estrellasGrandesAlta.svg'
           alt=''
