@@ -4,8 +4,8 @@ import { useRef, useState, useEffect } from 'react'
 export function useParallax() {
   const parallaxRef = useRef<IParallax>(null)
   const [totalPages, setTotalPages] = useState(0)
-  const pagesFactor = [0.8, 0.45, 0.95, 0.9, 0.85, 1.3, 0.7, 0.6]
-
+  const pagesFactor = [0.8, 1.05, 1.2, 1.15, 0.75, 0.5, 0.9, 0.5]
+  // hero, eligieron, juegos, testimonios, preguntas, nsotros, contacto, footer
   useEffect(() => {
     let newTotalPages = 0
     pagesFactor.forEach((n) => (newTotalPages += n))

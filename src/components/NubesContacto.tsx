@@ -4,18 +4,18 @@ export function NubesContacto({ offset }: { offset: number }) {
   return (
     <>
       {/* <div className=' h-[90dvh] relative z-10 overflow-hidden'> */}
-      <ParallaxLayer style={{ top: '1%' }} speed={0.07} offset={offset}>
+      <ParallaxLayer style={{ top: '0.9%' }} speed={0.07} offset={offset}>
         <img src='./src/assets/nubesContacto3.svg' alt='' className='w-full' />
       </ParallaxLayer>
       <ParallaxLayer
-        style={{ top: '2%', zIndex: 2 }}
+        style={{ top: '1%', zIndex: 2 }}
         speed={0.15}
         offset={offset}
       >
         <img src='./src/assets/nubesContacto2.svg' alt='' className='w-full' />
       </ParallaxLayer>
       <ParallaxLayer
-        style={{ top: '3%', zIndex: 3 }}
+        style={{ top: '1.2%', zIndex: 3 }}
         speed={0.25}
         offset={offset}
       >

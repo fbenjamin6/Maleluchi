@@ -7,7 +7,7 @@ export function Footer({
 }) {
   return (
     <>
-      <footer className='max-w-[950px] m-auto  text-white text-[17px]'>
+      <footer className='max-w-[1200px] m-auto h-full pb-12 content-end text-white text-[17px]'>
         <div className='flex flex-col gap-7'>
           <div className='flex justify-between'>
             <div className='flex flex-col gap-2.5'>

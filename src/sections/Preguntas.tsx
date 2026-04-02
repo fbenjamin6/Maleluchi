@@ -35,17 +35,17 @@ export function Preguntas() {
       <div className='flex flex-col items-center'>
         <h2
           data-text='PREGUNTAS FRECUENTES'
-          className='fredoka text-2xl sm:text-3xl xl:text-4xl text-orange reborde relative mb-3.5'
+          className='fredoka text-2xl sm:text-3xl xl:text-5xl text-orange reborde relative mb-3.5'
         >
           PREGUNTAS FRECUENTES
         </h2>
-        <p className='text-center max-w-92'>
+        <p className='text-center max-w-92 text-lg'>
           Si tenes alguna pregunta que no se encuentra en la lista, no dudes en
           consultarnos!
         </p>
       </div>
 
-      <div className='flex  flex-col  w-full gap-6 '>
+      <div className='flex flex-col w-full items-center gap-6 '>
         {preguntas.map(({ id, pregunta, respuesta }) => {
           return (
             <PreguntaAcordeon

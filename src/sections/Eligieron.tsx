@@ -1,5 +1,6 @@
 import { act } from 'react'
 import { useCarousel } from '../hooks/useCarousel'
+import videoTest from '../assets/carousel/videotest.mp4'
 
 export function Eligieron() {
   const { carouselRef, cardWidth, itemsToShow, dots, dotSlide, activeDot } =
@@ -9,23 +10,24 @@ export function Eligieron() {
   console.log(Array.from(Array(dots).keys()), arr)
   return (
     <section className='flex flex-col items-center gap-10'>
-      <div className='flex flex-col gap-3 items-center '>
+      <div className='flex flex-col gap-4 items-center '>
         <h2
           data-text='ELLOS NOS ELIGIERON'
-          className='fredoka text-2xl sm:text-3xl xl:text-4xl text-orange reborde relative '
+          className='fredoka text-2xl sm:text-3xl xl:text-5xl text-orange reborde relative '
         >
           ELLOS NOS ELIGIERON
         </h2>
-        <p className='text-center max-sm:max-w-92'>
+        <p className='text-lg text-center max-sm:max-w-92'>
           Lorem Ipsum has been the industry's standard dummy text ever since the
           1500s
         </p>
       </div>
 
       <div
-        className='relative '
+        className='relative mt-20'
         style={{
-          width: `${cardWidth === 0 ? '100%' : cardWidth * itemsToShow + 'px'}`,
+          // width: `${cardWidth === 0 ? '100%' : cardWidth * itemsToShow + 'px'}`,
+          width: '1000px',
         }}
       >
         <img
@@ -35,12 +37,12 @@ export function Eligieron() {
         />
         <div
           ref={carouselRef}
-          className='flex w-full h-[500px] items-center gap-6 overflow-x-scroll scroll-smooth snap-x snap-mandatory mb-6'
+          className='flex w-full h-[500px] items-center gap-6 overflow-x-scroll scroll-smooth snap-x snap-mandatory mb-12'
           style={{ scrollbarWidth: 'none' }}
         >
           {Array.from(Array(9).keys()).map((id) => {
             return (
-              <article className='flex flex-col text-center items-center pb-8 pt-11  relative snap-start w-[240px] h-full aspect-[3/4] justify-center '>
+              <article className='flex flex-col text-center items-center pb-8 pt-11  relative snap-start w-[310px] h-full aspect-[3/4] justify-center '>
                 <img
                   key={id}
                   src={`./src/assets/carousel/carousel${id + 1}.webp `}
@@ -50,7 +52,7 @@ export function Eligieron() {
             )
           })}
         </div>
-        <div className='flex gap-6 absolute left-1/2 -translate-x-[50%] bottom-1/8'>
+        <div className='flex gap-6 absolute left-1/2 -translate-x-[50%] bottom-4'>
           {arrDots.map((id) => {
             return (
               <button
@@ -65,4 +67,30 @@ export function Eligieron() {
       </div>
     </section>
   )
+}
+
+// {Array.from(Array(9).keys()).map((id) => {
+//             return (
+//               <article className='flex flex-col text-center items-center pb-8 pt-11  relative snap-start w-[320px] h-full aspect-[3/4] justify-center '>
+//                 {/* 240px el width */}
+//                 <img
+//                   key={id}
+//                   src={`./src/assets/carousel/carousel${id + 1}.webp `}
+//                   className='w-full rounded-3xl aspect-[3/4] border-2 border-[#004794]/28'
+//                 ></img>
+//               </article>
+//             )
+//           })}
+
+{
+  /* <article className='flex flex-col text-center items-center pb-8 pt-11  relative snap-start w-[320px] h-full aspect-[3/4] justify-center '>
+            
+            <video
+              autoPlay
+              loop
+              muted
+              src='./src/assets/carousel/videotest3.mp4'
+              className='w-full rounded-3xl aspect-[3/4] border-2 border-[#004794]/28  object-cover'
+            ></video>
+          </article> */
 }

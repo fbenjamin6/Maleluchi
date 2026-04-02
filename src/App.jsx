@@ -1,4 +1,5 @@
 import { Estrellas } from './components/Estrellas'
+import { WhatsappSVG } from './components/Icons'
 import { NubesContacto } from './components/nubesContacto'
 import { NubesHero } from './components/NubesHero'
 import { useParallax } from './hooks/useParallax'
@@ -44,11 +45,14 @@ function App() {
           key={totalPages}
         >
           <ParallaxLayer
-            offset={0.85}
-            factor={calculateOffset(5) + 0.5}
+            offset={0.8}
+            factor={calculateOffset(5) - 0.295}
             speed={0}
           >
-            <div className='bg-linear-to-b from-[#D1E8F8] to-[#827BC9] h-full w-full -z-50 relative'></div>
+            <div
+              aria-label='gradient'
+              className='bg-linear-to-b from-[#D1E8F8] to-[#827BC9] h-full w-full -z-50 relative'
+            ></div>
           </ParallaxLayer>
 
           <ParallaxLayer
@@ -59,9 +63,9 @@ function App() {
             <div className=' bg-[#827BC9] h-full w-full -z-50 relative'></div>
           </ParallaxLayer>
 
-          {/* <ParallaxLayer offset={calculateOffset(5)} factor={1} speed={0.5}>
+          <ParallaxLayer offset={calculateOffset(6)} factor={1.2} speed={0.5}>
             <div className='bg-linear-to-t from-[#2F4090] to-transparent h-full w-full -z-50 relative'></div>
-          </ParallaxLayer> */}
+          </ParallaxLayer>
 
           <Estrellas calculateOffset={calculateOffset} />
 
@@ -80,11 +84,11 @@ function App() {
             offset={calculateOffset(1)}
             factor={() => testFactorPages()}
           >
-            <Nosotros />
-            <Juegos />
             <Eligieron />
+            <Juegos />
             <Testimonios />
             <Preguntas />
+            <Nosotros />
             <Contacto />
           </ParallaxLayer>
 
@@ -99,6 +103,11 @@ function App() {
             <Footer parallaxScroll={parallaxScroll} />
           </ParallaxLayer>
         </Parallax>
+        <div className='absolute z-50 bottom-6 right-12'>
+          <button className='wppButton bg-[#25d366] cursor-pointer rounded-full p-3'>
+            <WhatsappSVG />
+          </button>
+        </div>
       </main>
     </>
   )

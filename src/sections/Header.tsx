@@ -19,14 +19,6 @@ export function Header({
           <ul className='flex gap-8 fredoka '>
             <li className=''>
               <button
-                onClick={() => parallaxScroll(1)}
-                className='text-white hover:text-[#F5B501] transition-colors duration-300 cursor-pointer'
-              >
-                SOBRE NOSOTROS
-              </button>
-            </li>
-            <li className=''>
-              <button
                 onClick={() => parallaxScroll(2)}
                 className='text-white hover:text-[#F5B501] transition-colors duration-300 cursor-pointer'
               >
@@ -44,6 +36,14 @@ export function Header({
             <li className=''>
               <button
                 onClick={() => parallaxScroll(5)}
+                className='text-white hover:text-[#F5B501] transition-colors duration-300 cursor-pointer'
+              >
+                SOBRE NOSOTROS
+              </button>
+            </li>
+            <li className=''>
+              <button
+                onClick={() => parallaxScroll(6)}
                 className='text-white hover:text-[#F5B501] transition-colors duration-300 cursor-pointer'
               >
                 CONTACTO

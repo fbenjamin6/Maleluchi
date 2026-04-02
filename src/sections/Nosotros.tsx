@@ -5,17 +5,17 @@ export function Nosotros() {
       className='flex gap-7 md:gap-10 items-center flex-col  relative'
     >
       <div className='absolute left-0 '>
-        <div className='rounded-full h-[21px] w-[21px] bg-[#AADAF8] -translate-x-[508%]' />
-        <div className='rounded-full h-[30px] w-[30px] bg-[#AADAF8] -translate-x-[315%]' />
-        <div className='rounded-full h-[41px] w-[41px] bg-[#AADAF8] -translate-x-[160%]' />
+        <div className='rounded-full h-[21px] w-[21px] bg-[#6d71c9] -translate-x-[508%]' />
+        <div className='rounded-full h-[30px] w-[30px] bg-[#6d71c9] -translate-x-[315%]' />
+        <div className='rounded-full h-[41px] w-[41px] bg-[#6d71c9] -translate-x-[160%]' />
       </div>
       <h2
         data-text='¿QUIÉNES SOMOS?'
-        className='fredoka text-2xl sm:text-3xl xl:text-4xl text-orange reborde relative'
+        className='fredoka text-2xl sm:text-3xl xl:text-5xl text-orange reborde relative'
       >
         ¿QUIÉNES SOMOS?
       </h2>
-      <div className='flex gap-4 flex-col text-lg'>
+      <div className='flex gap-4 flex-col text-xl '>
         <p>
           Somos una empresa familiar dedicada al alquiler de juegos para
           cumpleaños, fiestas y todo tipo de eventos. Maleluchi nació hace más
@@ -32,9 +32,9 @@ export function Nosotros() {
         </p>
       </div>
       <div className='absolute right-0 bottom-0 '>
-        <div className='rounded-full h-[41px] w-[41px] bg-[#AADAF8] translate-x-[160%]' />
-        <div className='rounded-full h-[30px] w-[30px] bg-[#AADAF8] translate-x-[315%]' />
-        <div className='rounded-full h-[21px] w-[21px] bg-[#AADAF8] translate-x-[508%]' />
+        <div className='rounded-full h-[41px] w-[41px] bg-[#6d71c9] translate-x-[160%]' />
+        <div className='rounded-full h-[30px] w-[30px] bg-[#6d71c9] translate-x-[315%]' />
+        <div className='rounded-full h-[21px] w-[21px] bg-[#6d71c9] translate-x-[508%]' />
       </div>
     </section>
   )

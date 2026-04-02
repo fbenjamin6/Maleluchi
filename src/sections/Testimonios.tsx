@@ -9,15 +9,15 @@ export function Testimonios() {
     useCarousel()
   console.log(cardWidth, itemsToShow)
   return (
-    <section id='testimonios' className='flex flex-col gap-10'>
+    <section id='testimonios' className='flex flex-col gap-10 items-center'>
       <div className='flex flex-col items-center'>
         <h2
           data-text='TESTIMONIOS'
-          className='fredoka text-2xl sm:text-3xl xl:text-4xl text-orange reborde relative mb-3.5'
+          className='fredoka text-2xl sm:text-3xl xl:text-5xl text-orange reborde relative mb-3.5'
         >
           TESTIMONIOS
         </h2>
-        <div className='text-center'>
+        <div className='text-center text-lg'>
           <p>Lo que los clientes dicen de nosotros.</p>
           <p>Sus opiniones son fundamentales para ayudarnos a hacerlo bien.</p>
         </div>

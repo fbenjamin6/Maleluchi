@@ -59,8 +59,13 @@ h1 {
   line-height: 1.1;
 }
 
+textarea {
+  resize: none;
+}
+
 section {
-  max-width: 950px;
+  /* max-width: 950px; */
+  max-width: 1200px;
   margin: auto;
   padding: 110px 20px;
 }
@@ -68,8 +73,22 @@ section {
 .cardsGrid {
   display: grid;
   grid-gap: 10px;
-  grid-auto-rows: minmax(220px, auto);
+  /* grid-auto-rows: minmax(220px, auto); */
+  grid-auto-rows: minmax(283px, auto);
   grid-template-columns: repeat(4, 1fr);
+}
+.wppButton {
+  box-shadow: 0 0 0 0 rgba(37, 211, 101, 0);
+  animation: _pulse 1.2s infinite;
+}
+
+@keyframes _pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 101, 0.75);
+  }
+  100% {
+    box-shadow: 0 0 0 30px rgba(37, 211, 101, 0);
+  }
 }
 
 @media screen and (max-width: 767px) {

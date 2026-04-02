@@ -18,7 +18,7 @@ export function Hero({
           <img
             src='./src/assets/maleluchiHero.webp'
             alt=''
-            className='xl:w-[640px] sm:w-[420px] w-[300px]'
+            className='xl:w-[760px] sm:w-[420px] w-[300px]'
           />
           <div className='flex gap-4 sm:gap-6 lg:gap-8  justify-evenly'>
             <button
@@ -34,8 +34,8 @@ export function Hero({
             </button>
 
             <button
-              onClick={() => parallaxScroll(5)}
-              className='flex items-center gap-1 md:gap-2 py-1 px-3 md:px-4 bg-[#2C8BD3]/50 border-2 md:border-3 border-white rounded-[18px] cursor-pointer transition-transform hover:scale-105 duration-300 group'
+              onClick={() => parallaxScroll(6)}
+              className='flex items-center gap-1 md:gap-2 py-1.5 px-3 md:px-4.5 bg-[#2C8BD3]/50 border-2 md:border-3 border-white rounded-[18px] cursor-pointer transition-transform hover:scale-105 duration-300 group'
             >
               <p className=' text-white w-max reborde-sm relative xl:text-2xl sm:text-xl  fredoka  group-hover:scale-105 transition-transform duration-300'>
                 CONTACTO
