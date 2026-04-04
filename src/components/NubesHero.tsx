@@ -7,7 +7,7 @@ export function NubesHero() {
         <img
           src='./src/assets/nubesHero5.svg'
           alt=''
-          className='w-full max-w-none'
+          className='w-full '
           style={{ width: '200%' }}
         />
       </ParallaxLayer>
@@ -15,7 +15,7 @@ export function NubesHero() {
         <img
           src='./src/assets/nubesHero4.svg'
           alt=''
-          className='w-full max-w-none'
+          className='w-full '
           style={{ width: '200%' }}
         />
       </ParallaxLayer>
@@ -23,7 +23,7 @@ export function NubesHero() {
         <img
           src='./src/assets/nubesHero3.svg'
           alt=''
-          className='w-full max-w-none'
+          className='w-full '
           style={{ zIndex: 3, width: '200%' }}
         />
       </ParallaxLayer>
@@ -31,7 +31,7 @@ export function NubesHero() {
         <img
           src='./src/assets/nubesHero2.svg'
           alt=''
-          className='w-full max-w-none'
+          className='w-full '
           style={{ width: '200%' }}
         />
       </ParallaxLayer>
