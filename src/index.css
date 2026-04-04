@@ -53,10 +53,18 @@
   color: black;
   -webkit-text-stroke: 4px black;
 }
+#hero #textHero::before {
+  color: #4ba9e7;
+  -webkit-text-stroke: 6px #4ba9e7;
+}
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h3.fredoka {
+  font-size: 48px;
 }
 
 textarea {
@@ -64,7 +72,6 @@ textarea {
 }
 
 section {
-  /* max-width: 950px; */
   max-width: 1200px;
   margin: auto;
   padding: 110px 20px;
@@ -91,9 +98,29 @@ section {
   }
 }
 
+@media screen and (max-width: 1279px) {
+  h3.fredoka {
+    font-size: 40px;
+  }
+  .cardsGrid {
+    grid-auto-rows: minmax(225px, auto);
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 949px) {
+  .cardsGrid {
+    grid-auto-rows: minmax(180px, auto);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media screen and (max-width: 767px) {
+  h3.fredoka {
+    font-size: 36px;
+  }
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .cardsGrid {
     grid-auto-rows: minmax(180px, auto);
@@ -107,6 +134,9 @@ section {
 @media screen and (max-width: 639px) {
   .reborde::before {
     -webkit-text-stroke: 6px black;
+  }
+  h3.fredoka {
+    font-size: 32px;
   }
 }
 

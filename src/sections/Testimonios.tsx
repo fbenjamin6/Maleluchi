@@ -6,17 +6,16 @@ import { useCarousel } from '../hooks/useCarousel'
 
 export function Testimonios() {
   const { carouselRef, handleScroll, firstSlide, itemsToShow, cardWidth } =
-    useCarousel()
-  console.log(cardWidth, itemsToShow)
+    useCarousel({ totalItems: testimonios.length })
   return (
     <section id='testimonios' className='flex flex-col gap-10 items-center'>
       <div className='flex flex-col items-center'>
-        <h2
+        <h3
           data-text='TESTIMONIOS'
-          className='fredoka text-2xl sm:text-3xl xl:text-5xl text-orange reborde relative mb-3.5'
+          className='fredoka text-orange reborde relative mb-3.5'
         >
           TESTIMONIOS
-        </h2>
+        </h3>
         <div className='text-center text-lg'>
           <p>Lo que los clientes dicen de nosotros.</p>
           <p>Sus opiniones son fundamentales para ayudarnos a hacerlo bien.</p>
@@ -37,7 +36,7 @@ export function Testimonios() {
         </button>
         <div
           ref={carouselRef}
-          className='overflow-x-scroll scroll-smooth snap-x snap-mandatory flex gap-6 pb-1.5 pt-8'
+          className='overflow-x-scroll scroll-smooth snap-x snap-mandatory flex gap-6 pb-1.5 pt-8 ml-3'
           style={{ scrollbarWidth: 'none' }}
         >
           {testimonios.map(({ id, nombre, data }) => {

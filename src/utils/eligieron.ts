@@ -14,7 +14,7 @@ export const eligieron = [
   {
     id: 3,
     url: './src/assets/carousel/carouselAJ.jpg',
-    title: 'ASOSIACIÓN ATLÉTICA ARGENTINOS JUNIORS',
+    title: 'ASOCIACIÓN ATLÉTICA ARGENTINOS JUNIORS',
     urlEsquina: './src/assets/carousel/esquinaAJ.png',
   },
   {

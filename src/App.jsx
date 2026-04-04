@@ -1,5 +1,5 @@
+import { BotonWpp } from './components/BotonWpp'
 import { Estrellas } from './components/Estrellas'
-import { WhatsappSVG } from './components/Icons'
 import { NubesContacto } from './components/nubesContacto'
 import { NubesHero } from './components/NubesHero'
 import { useParallax } from './hooks/useParallax'
@@ -103,11 +103,7 @@ function App() {
             <Footer parallaxScroll={parallaxScroll} />
           </ParallaxLayer>
         </Parallax>
-        <div className='absolute z-50 bottom-6 right-12'>
-          <button className='wppButton bg-[#25d366] cursor-pointer rounded-full p-3'>
-            <WhatsappSVG />
-          </button>
-        </div>
+        <BotonWpp />
       </main>
     </>
   )

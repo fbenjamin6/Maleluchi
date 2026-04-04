@@ -25,7 +25,7 @@ export const juegos = [
   },
   {
     id: 5,
-    nombre: 'Yenga Gigante',
+    nombre: 'Jenga Gigante',
     dimensiones: '2,74 m x 1,52 m x 76 cm',
     image: './src/assets/juegos/yengaGiganteMaleluchi.jpg',
   },

@@ -4,12 +4,12 @@ export function Juegos() {
   return (
     <section className='flex flex-col items-center gap-10'>
       <div className='flex flex-col gap-3 items-center'>
-        <h2
+        <h3
           data-text='NUESTROS JUEGOS'
-          className='fredoka text-2xl sm:text-3xl xl:text-5xl text-orange reborde relative '
+          className='fredoka  text-orange reborde relative '
         >
           NUESTROS JUEGOS
-        </h2>
+        </h3>
         <p className='text-lg text-center max-sm:max-w-92'>
           Lorem Ipsum has been the industry's standard dummy text ever since the
           1500s
@@ -23,13 +23,13 @@ export function Juegos() {
               className={`w-full bg-[url(${image})] bg-cover text-white aspect-square rounded-xl border-3 sm:border-4 border-[#FFC625] overflow-hidden flex group drop-shadow-[0px_1px_2px_rgba(0,0,0,0.60)] md:drop-shadow-[0px_2px_4px_rgba(0,0,0,0.60)]`}
               style={{ backgroundImage: `url(${image})` }}
             >
-              <div className='bg-black/60 flex flex-col  px-4 pt-2 pb-4  transition-all duration-400 group-hover:h-full h-[46px] w-full self-end group-hover:pt-12 sm:group-hover:pt-20 lg:group-hover:pt-36'>
+              <div className='bg-black/60 flex flex-col  px-4 pt-2 pb-4  transition-all duration-400 group-hover:h-full h-[46px] w-full self-end group-hover:pt-12 sm:group-hover:pt-16 xl:group-hover:pt-36'>
                 <h4 className='text-2xl font-medium '>{nombre}</h4>
                 <div className='flex flex-col gap-1.5 -mt-0.5 opacity-0 group-hover:opacity-100 transition-opacity'>
                   <p className='text-gray-300 text-base font-light max-w-28 leading-none'>
                     {dimensiones}
                   </p>
-                  <button className='w-min border-2 border-black rounded-lg bg-[#ffdc7a] text-base px-3 py-1 fredoka mt-2 cursor-pointer'>
+                  <button className='w-min border-2 border-[#f5b501] rounded-lg bg-[#ffdc7a]/90 text-base px-3 py-1 fredoka mt-2 cursor-pointer'>
                     <p
                       data-text='CONSULTAR'
                       className='fredoka text-orange w-max reborde-sm relative text-lg'

@@ -18,7 +18,7 @@ export function PreguntaAcordeon({
 
   return (
     <div
-      className={`flex flex-col rounded-2xl w-7/8 p-5 gap-2.5 transition-all duration-400 cursor-pointer border-2 border-black/15 shadow-[0_4px_4px_rgba(0,0,0,0.25)] overflow-hidden h-[var(--h)]  ${
+      className={`flex flex-col rounded-2xl max-sm:gap-1.5 max-sm:w-full  w-7/8 p-5 gap-2.5 transition-all duration-400 cursor-pointer border-2 border-black/15 shadow-[0_4px_4px_rgba(0,0,0,0.25)] overflow-hidden h-[var(--h)]  ${
         isOpen ? 'bg-[#FDE4A0]' : 'bg-[#FFFCF2]'
       }`}
       style={{ ['--h' as any]: isOpen ? `${pHeight + 74 + 5}px` : '74px' }}
@@ -27,7 +27,7 @@ export function PreguntaAcordeon({
       <div className='flex justify-between'>
         <h4
           data-text={pregunta}
-          className='fredoka reborde-sm text-orange text-2xl '
+          className='fredoka reborde-sm text-orange text-lg sm:text-xl md:text-2xl '
         >
           {pregunta}
         </h4>

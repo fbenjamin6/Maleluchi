@@ -2,15 +2,15 @@ export function Contacto() {
   return (
     <>
       <section className='flex gap-10 items-center flex-col  '>
-        <h2
+        <h3
           data-text='CONTACTO'
-          className='fredoka text-2xl sm:text-3xl xl:text-5xl text-orange reborde relative '
+          className='fredoka text-orange reborde relative '
         >
           CONTACTO
-        </h2>
+        </h3>
         <div className='flex gap-4 flex-col py-6 px-8 shadow-[0_1px_4px_rgba(0,0,0,0.25)] rounded-[18px] w-6/8 backdrop-blur-xs'>
-          <form action='' className='flex  gap-3.5 pb-8'>
-            <div className='flex flex-col gap-4 w-1/2'>
+          <form action='' className='flex max-md:flex-col gap-3.5 pb-8'>
+            <div className='flex flex-col gap-4 md:w-1/2'>
               <input
                 type='text'
                 name=''
@@ -44,7 +44,7 @@ export function Contacto() {
               name=''
               id=''
               placeholder='Consulta'
-              className='border-2 border-neutral-950/60 shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-1.5 px-3 rounded-xl bg-white w-1/2 text-lg'
+              className='border-2 border-neutral-950/60 shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-1.5 px-3 rounded-xl bg-white md:w-1/2 text-lg max-md:h-32'
             ></textarea>
             <button
               type='submit'

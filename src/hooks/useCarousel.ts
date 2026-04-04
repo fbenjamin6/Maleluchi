@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react'
 
-export function useCarousel() {
+export function useCarousel({ totalItems }: { totalItems: number }) {
   const carouselRef = useRef<HTMLDivElement>(null)
   const [itemsToShow, setItemsToShow] = useState(3)
   const [firstSlide, setFirstSlide] = useState(true)
@@ -14,22 +14,22 @@ export function useCarousel() {
       const width = window.innerWidth
       const newItemsToShow = width >= 1280 ? 3 : width >= 768 ? 2 : 1
       const newCardWidth = carouselRef.current
-        ? carouselRef.current.scrollWidth / 9
+        ? carouselRef.current.scrollWidth / totalItems
         : 0
       setCardWidth(newCardWidth)
 
       if (width >= 1280) {
         setItemsToShow(newItemsToShow)
         setScrollDistance(newCardWidth * newItemsToShow)
-        setDots(Math.round(9 / newItemsToShow))
+        setDots(Math.ceil(totalItems / newItemsToShow))
       } else if (width >= 768) {
         setItemsToShow(newItemsToShow)
         setScrollDistance(newCardWidth * newItemsToShow)
-        setDots(Math.round(9 / newItemsToShow))
+        setDots(Math.round(totalItems / newItemsToShow))
       } else {
         setItemsToShow(newItemsToShow)
         setScrollDistance(newCardWidth * newItemsToShow)
-        setDots(Math.round(9 / newItemsToShow))
+        setDots(Math.round(totalItems / newItemsToShow))
       }
     }
 
@@ -46,7 +46,8 @@ export function useCarousel() {
     const direction = e.currentTarget.getAttribute('aria-label')
 
     if (direction === 'right') {
-      if (carousel.scrollLeft + scrollDistance >= totalWidth) {
+      console.log(carousel.scrollLeft, scrollDistance, totalWidth)
+      if (Math.ceil(carousel.scrollLeft + scrollDistance) >= totalWidth) {
         carousel.scrollLeft = 0
         setFirstSlide(true)
         return

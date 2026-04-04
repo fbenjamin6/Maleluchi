@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from 'react'
 export function useParallax() {
   const parallaxRef = useRef<IParallax>(null)
   const [totalPages, setTotalPages] = useState(0)
-  const pagesFactor = [0.8, 1.05, 1.2, 1.15, 0.75, 0.5, 0.9, 0.5]
+  const pagesFactor = [0.8, 0.95, 1.2, 1.05, 0.75, 0.5, 1, 0.42]
   // hero, eligieron, juegos, testimonios, preguntas, nsotros, contacto, footer
   useEffect(() => {
     let newTotalPages = 0
@@ -15,7 +15,6 @@ export function useParallax() {
   function parallaxScroll(n: number) {
     const target = calculateOffset(n)
     parallaxRef.current?.scrollTo(target)
-    console.dir(parallaxRef)
   }
 
   function calculateOffset(section: number) {

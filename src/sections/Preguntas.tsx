@@ -33,12 +33,12 @@ export function Preguntas() {
   return (
     <section className='flex  flex-col w-full gap-10'>
       <div className='flex flex-col items-center'>
-        <h2
+        <h3
           data-text='PREGUNTAS FRECUENTES'
-          className='fredoka text-2xl sm:text-3xl xl:text-5xl text-orange reborde relative mb-3.5'
+          className='fredoka text-orange reborde relative mb-3.5'
         >
           PREGUNTAS FRECUENTES
-        </h2>
+        </h3>
         <p className='text-center max-w-92 text-lg'>
           Si tenes alguna pregunta que no se encuentra en la lista, no dudes en
           consultarnos!
