@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from 'react'
 import { ChevronArrowRightIcon } from '../components/Icons'
 import { TestimonioCard } from '../components/TestimonioCard'
 import { testimonios } from '../utils/testimonios'
