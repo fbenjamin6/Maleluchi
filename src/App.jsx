@@ -21,49 +21,40 @@ function App() {
     parallaxScroll,
     calculateOffset,
     pagesFactor,
+    contentFactorPages,
   } = useParallax()
-
-  function testFactorPages() {
-    let total = 0
-    pagesFactor.forEach((n, i) => {
-      if (i === 0 || i === 7) return
-      total += n
-    })
-
-    return total
-  }
 
   return (
     <>
       <Header parallaxScroll={parallaxScroll} />
-      <main className='min-h-[900px]  h-dvh relative'>
+      <main className='  h-screen overflow-hidden relative'>
         <Parallax
           ref={parallaxRef}
           pages={totalPages}
           className=''
-          style={{ top: '0', left: '0', minHeight: '800px' }}
+          style={{ top: '0', left: '0' }}
           key={totalPages}
         >
-          <ParallaxLayer
-            offset={0.8}
-            factor={calculateOffset(5) - 0.295}
-            speed={0}
-          >
+          <ParallaxLayer offset={0.8} factor={calculateOffset(7)} speed={0}>
             <div
               aria-label='gradient'
-              className='bg-linear-to-b from-[#D1E8F8] to-[#827BC9] h-full w-full -z-50 relative'
+              className='bg-linear-to-b from-[#D1E8F8] from-5% to-75% to-[#827BC9] h-full w-full -z-50 relative'
             ></div>
           </ParallaxLayer>
 
-          <ParallaxLayer
+          {/* <ParallaxLayer
             offset={calculateOffset(6)}
             factor={pagesFactor[6]}
             speed={0}
           >
             <div className=' bg-[#827BC9] h-full w-full -z-50 relative'></div>
-          </ParallaxLayer>
+          </ParallaxLayer> */}
 
-          <ParallaxLayer offset={calculateOffset(6)} factor={1.2} speed={0.5}>
+          <ParallaxLayer
+            offset={calculateOffset(6)}
+            factor={pagesFactor[6] + pagesFactor[7] + 0.2}
+            speed={0.5}
+          >
             <div className='bg-linear-to-t from-[#2F4090] to-transparent h-full w-full -z-50 relative'></div>
           </ParallaxLayer>
 
@@ -82,10 +73,10 @@ function App() {
 
           <ParallaxLayer
             offset={calculateOffset(1)}
-            factor={() => testFactorPages()}
+            factor={() => contentFactorPages()}
           >
             <Eligieron />
-            <Juegos />
+            <Juegos parallaxScroll={parallaxScroll} />
             <Testimonios />
             <Preguntas />
             <Nosotros />
@@ -110,5 +101,3 @@ function App() {
 }
 
 export default App
-
-//bg-linear-to-b from-[#D1E8F8] to-[#827BC9]

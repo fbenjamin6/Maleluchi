@@ -12,7 +12,7 @@ export function TestimonioCard({
   return (
     <article
       key={id}
-      className='flex flex-col text-center items-center justify-between bg-[#FFF5DB] h-[400px] md:h-[450px] w-[310px] mx-0.5 px-4 pb-8  pt-11 rounded-3xl shadow-[0_4px_4px_rgba(0,0,0,0.25)] relative aspect-[4/3] whitespace-break-spaces snap-start'
+      className='flex flex-col text-center items-center justify-between bg-[#FFF5DB] h-[400px] md:h-[450px] w-[260px] sm:w-[310px] mx-0.5 px-4 pb-8  pt-11 rounded-3xl shadow-[0_4px_4px_rgba(0,0,0,0.25)] relative aspect-[4/3] whitespace-break-spaces snap-start'
     >
       <QuoteIcon />
       <p className='text-[17px]'>{data}</p>
@@ -35,5 +35,3 @@ export function TestimonioCard({
     </article>
   )
 }
-
-// 280px el width

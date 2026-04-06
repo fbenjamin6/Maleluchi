@@ -8,7 +8,7 @@ export function Eligieron() {
   const arrDots = Array.from(Array(dots).keys())
 
   return (
-    <section className='flex flex-col items-center gap-10 relative '>
+    <section className='flex flex-col items-center gap-2 sm:gap-10 relative '>
       <div className='absolute left-18 sm:left-28 xl:left-5 max-lg:scale-75 '>
         <div className='rounded-full h-[21px] w-[21px] bg-[#AADAF8] -translate-x-[508%]' />
         <div className='rounded-full h-[30px] w-[30px] bg-[#9cd4f7] -translate-x-[315%]' />
@@ -19,7 +19,7 @@ export function Eligieron() {
         <div className='rounded-full h-[30px] w-[30px] bg-[#9cd4f7]/60 translate-x-[315%]' />
         <div className='rounded-full h-[21px] w-[21px] bg-[#AADAF8]/50 translate-x-[508%]' />
       </div>
-      <div className='flex flex-col gap-4 items-center '>
+      <div className='flex flex-col gap-2 sm:gap-4 items-center '>
         <h3
           data-text='ELLOS NOS ELIGIERON'
           className='fredoka  text-orange reborde relative mt-10'
@@ -40,18 +40,18 @@ export function Eligieron() {
       >
         <div
           ref={carouselRef}
-          className='flex w-full h-[500px] items-center gap-5 overflow-x-scroll scroll-smooth snap-x snap-mandatory mb-12'
+          className='flex w-full  items-center gap-5 overflow-x-scroll scroll-smooth snap-x snap-mandatory mb-4 sm:mb-12 ml-2.5 mt-5 '
           style={{ scrollbarWidth: 'none' }}
         >
           {eligieron.map(({ id, title, url, urlEsquina }) => {
             return (
               <article
                 key={id}
-                className=' shrink-0  w-max  text-center relative snap-start z-10 border-4 border-[#004794]/28 rounded-3xl overflow-hidden shadow-[0_4px_4px_rgba(0,0,0,0.25)]'
+                className=' shrink-0  w-max  text-center relative snap-start z-10 border-4 border-[#004794]/28 rounded-3xl overflow-hidden shadow-[0_4px_4px_rgba(0,0,0,0.25)] mb-2'
               >
                 <img
                   src={url}
-                  className='shrink-0 w-[350px] aspect-[3/4] object-cover relative z-10 '
+                  className='shrink-0 w-[280px] sm:w-[350px] aspect-[3/4] object-cover relative z-10 '
                 />
                 <img
                   src={urlEsquina}
@@ -71,7 +71,7 @@ export function Eligieron() {
             )
           })}
         </div>
-        <div className='flex gap-6 absolute left-1/2 -translate-x-[50%] bottom-4'>
+        <div className='flex gap-6 absolute left-1/2 -translate-x-[50%] -bottom-6 sm:bottom-0'>
           {arrDots.map((id) => {
             return (
               <button

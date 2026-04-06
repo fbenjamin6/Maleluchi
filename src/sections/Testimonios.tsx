@@ -8,11 +8,14 @@ export function Testimonios() {
   const { carouselRef, handleScroll, firstSlide, itemsToShow, cardWidth } =
     useCarousel({ totalItems: testimonios.length })
   return (
-    <section id='testimonios' className='flex flex-col gap-10 items-center'>
-      <div className='flex flex-col items-center'>
+    <section
+      id='testimonios'
+      className='flex flex-col gap-5 sm:gap-10 items-center'
+    >
+      <div className='flex flex-col items-center gap-2 sm:gap-3'>
         <h3
           data-text='TESTIMONIOS'
-          className='fredoka text-orange reborde relative mb-3.5'
+          className='fredoka text-orange reborde relative '
         >
           TESTIMONIOS
         </h3>
@@ -32,7 +35,7 @@ export function Testimonios() {
           aria-label='left'
           onClick={(e) => handleScroll(e)}
         >
-          <ChevronArrowRightIcon classes='rotate-y-180 absolute top-1/2 -translate-y-[50%] -left-16' />
+          <ChevronArrowRightIcon classes='rotate-y-180 absolute top-1/2 -translate-y-[50%] -left-11 sm:-left-16' />
         </button>
         <div
           ref={carouselRef}
@@ -50,7 +53,7 @@ export function Testimonios() {
           aria-label='right'
           onClick={(e) => handleScroll(e)}
         >
-          <ChevronArrowRightIcon classes='absolute top-1/2 -translate-y-[50%] -right-16' />
+          <ChevronArrowRightIcon classes='absolute top-1/2 -translate-y-[50%] -right-11 sm:-right-16' />
         </button>
       </div>
     </section>

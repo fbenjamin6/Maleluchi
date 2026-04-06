@@ -11,48 +11,48 @@ export function Estrellas({
         <img
           src='./src/assets/estrellasGrandesMedia.svg'
           alt=''
-          className='opacity-10'
+          className='opacity-10 lg:w-[120%] xl:w-full imgParallax'
         />
         <img
           src='./src/assets/estrellasGrandesMedia.svg'
           alt=''
-          className='opacity-30'
+          className='opacity-30 lg:w-[120%] xl:w-full imgParallax'
         />
       </ParallaxLayer>
       <ParallaxLayer offset={calculateOffset(4) + 0.2} speed={-0.14}>
         <img
           src='./src/assets/estrellasChicasMedia.svg'
           alt=''
-          className='opacity-20'
+          className='opacity-20 lg:w-[120%] xl:w-full imgParallax'
         />
         <img
           src='./src/assets/estrellasChicasMedia.svg'
           alt=''
-          className='opacity-40'
+          className='opacity-40 lg:w-[120%] xl:w-full imgParallax'
         />
       </ParallaxLayer>
       <ParallaxLayer offset={calculateOffset(5) + 0.2} speed={-0.05}>
         <img
           src='./src/assets/estrellasGrandesMedia.svg'
           alt=''
-          className='opacity-60'
+          className='opacity-60 lg:w-[120%] xl:w-full imgParallax'
         />
         <img
           src='./src/assets/estrellasGrandesMedia.svg'
           alt=''
-          className='opacity-70'
+          className='opacity-70 lg:w-[120%] xl:w-full imgParallax'
         />
       </ParallaxLayer>
       <ParallaxLayer offset={calculateOffset(5) + 0.2} speed={-0.14}>
         <img
           src='./src/assets/estrellasChicasMedia.svg'
           alt=''
-          className='opacity-60'
+          className='opacity-60 lg:w-[120%] xl:w-full imgParallax'
         />
         <img
           src='./src/assets/estrellasChicasMedia.svg'
           alt=''
-          className='opacity-70'
+          className='opacity-70 lg:w-[120%] xl:w-full imgParallax'
         />
       </ParallaxLayer>
 
@@ -60,23 +60,16 @@ export function Estrellas({
         <img
           src='./src/assets/estrellasChicasAlta.svg'
           alt=''
-          className='opacity-100'
+          className='opacity-100 lg:w-[120%] xl:w-full imgParallax'
         />
       </ParallaxLayer>
       <ParallaxLayer offset={calculateOffset(6)} speed={-0.14}>
         <img
           src='./src/assets/estrellasGrandesAlta.svg'
           alt=''
-          className='opacity-100'
+          className='opacity-100 lg:w-[120%] xl:w-full imgParallax'
         />
       </ParallaxLayer>
     </>
   )
-}
-
-{
-  /* 
-  <img src='./src/assets/estrellasGrandesMedia.svg' alt='' className='opacity-100' />
-  <img src='./src/assets/estrellasChicasMedia.svg' alt='' className='opacity-100' />
- */
 }

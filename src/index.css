@@ -21,6 +21,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.imgParallax {
+  max-width: none;
+}
+
 .fredoka {
   /* font-size: 40px; */
   font-family: 'Fredoka One';
@@ -148,7 +152,7 @@ section {
   }
 
   section {
-    padding: 80px 12px;
+    padding: 60px 12px;
   }
 }
 

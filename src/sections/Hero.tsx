@@ -24,7 +24,7 @@ export function Hero({
           <h2
             id='textHero'
             data-text='CUMPLEAÑOS, CASAMIENTOS, ANIVERSARIOS, COMUNIONES Y MÁS!'
-            className=' font-semibold text-xl xl:text-2xl text-white tracking-widest  max-w-[640px] reborde-sm fredoka text-center'
+            className=' font-semibold sm:text-xl xl:text-2xl text-white tracking-widest  max-w-[640px] reborde-sm fredoka text-center'
           >
             CUMPLEAÑOS, CASAMIENTOS, ANIVERSARIOS, COMUNIONES Y MÁS!
           </h2>
@@ -56,28 +56,4 @@ export function Hero({
       </section>
     </>
   )
-}
-
-{
-  /* <button
-              onClick={() => parallaxScroll(2)}
-              className='px-5 border-3 border-transparent  cursor-pointer transition-transform hover:scale-105 duration-300'
-            >
-              <p
-                data-text='CATÁLOGO'
-                className='fredoka text-white w-max reborde-sm relative xl:text-2xl sm:text-xl  fredoka'
-              >
-                CATÁLOGO
-              </p>
-            </button>
-
-            <button
-              onClick={() => parallaxScroll(5)}
-              className='flex items-center gap-1 md:gap-2 py-1 px-3 md:px-4 bg-[#2C8BD3]/50 border-2 md:border-3 border-white rounded-[18px] cursor-pointer transition-transform hover:scale-105 duration-300 group'
-            >
-              <p className=' text-white w-max reborde-sm relative xl:text-2xl sm:text-xl  fredoka  group-hover:scale-105 transition-transform duration-300'>
-                CONTACTO
-              </p>
-              <PhoneIcon />
-            </button> */
 }

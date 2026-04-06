@@ -31,8 +31,8 @@ export function Preguntas() {
   ]
 
   return (
-    <section className='flex  flex-col w-full gap-10'>
-      <div className='flex flex-col items-center'>
+    <section className='flex  flex-col w-full gap-8 sm:gap-10'>
+      <div className='flex flex-col items-center text-center'>
         <h3
           data-text='PREGUNTAS FRECUENTES'
           className='fredoka text-orange reborde relative mb-3.5'
@@ -45,7 +45,7 @@ export function Preguntas() {
         </p>
       </div>
 
-      <div className='flex flex-col w-full items-center gap-6 '>
+      <div className='flex flex-col w-full items-center gap-4 sm:gap-6 '>
         {preguntas.map(({ id, pregunta, respuesta }) => {
           return (
             <PreguntaAcordeon

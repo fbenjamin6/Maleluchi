@@ -10,7 +10,7 @@ export function Nosotros() {
       >
         ¿QUIÉNES SOMOS?
       </h3>
-      <div className='flex gap-4 flex-col  w-4/5'>
+      <div className='flex gap-4 flex-col max-sm:text-center  sm:w-4/5'>
         <p className=' text-xl! max-md:text-2xl'>
           Somos una empresa familiar dedicada al alquiler de juegos para
           cumpleaños, fiestas y todo tipo de eventos. Maleluchi nació hace más
@@ -29,8 +29,3 @@ export function Nosotros() {
     </section>
   )
 }
-
-// Somos una empresa familiar dedicada al alquiler de juegos. Tenemos más
-//           de <b>14 años de trayectoria</b> creando experiencias inolvidables con
-//           nuestros juegos. Nos destacamos por el excelente estado de nuestros
-//           juegos y una atención personalizada.

@@ -85,7 +85,7 @@ export function Footer({
 
           <div className='w-[700px] m-auto border-b border-gray-300/15'></div>
 
-          <div className='flex justify-between'>
+          <div className='flex justify-between max-sm:flex-col max-sm:gap-3'>
             <h5>© 2025 Maleluchi</h5>
 
             <h5>

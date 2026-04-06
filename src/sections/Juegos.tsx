@@ -1,9 +1,13 @@
 import { juegos } from '../utils/juegos'
 
-export function Juegos() {
+export function Juegos({
+  parallaxScroll,
+}: {
+  parallaxScroll: (n: number) => void
+}) {
   return (
-    <section className='flex flex-col items-center gap-10'>
-      <div className='flex flex-col gap-3 items-center'>
+    <section className='flex flex-col items-center gap-6 sm:gap-10'>
+      <div className='flex flex-col gap-2 sm:gap-3 items-center'>
         <h3
           data-text='NUESTROS JUEGOS'
           className='fredoka  text-orange reborde relative '
@@ -29,7 +33,10 @@ export function Juegos() {
                   <p className='text-gray-300 text-base font-light max-w-28 leading-none'>
                     {dimensiones}
                   </p>
-                  <button className='w-min border-2 border-[#f5b501] rounded-lg bg-[#ffdc7a]/90 text-base px-3 py-1 fredoka mt-2 cursor-pointer'>
+                  <button
+                    onClick={() => parallaxScroll(6)}
+                    className='w-min border-2 border-[#f5b501] rounded-lg bg-[#ffdc7a]/90 text-base px-3 py-1 fredoka mt-2 cursor-pointer'
+                  >
                     <p
                       data-text='CONSULTAR'
                       className='fredoka text-orange w-max reborde-sm relative text-lg'
