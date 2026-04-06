@@ -1,3 +1,6 @@
+import chevronRight from '../assets/ChevronArrowRight.svg'
+import chevronUp from '../assets/ChevronArrowUp.svg'
+
 export function QuoteIcon() {
   return (
     <div className='rounded-full bg-white p-2 absolute top-0 -translate-y-1/2'>
@@ -34,22 +37,10 @@ export function StarIcon() {
 }
 
 export function ChevronArrowRightIcon({ classes }: { classes: string }) {
-  return (
-    <img
-      src='./src/assets/ChevronArrowRight.svg'
-      alt=''
-      className={`${classes}`}
-    />
-  )
+  return <img src={chevronRight} alt='' className={`${classes}`} />
 }
 export function ChevronArrowUpIcon({ classes }: { classes: string }) {
-  return (
-    <img
-      src='./src/assets/ChevronArrowUp.svg'
-      alt=''
-      className={`w-7 ease-out ${classes}`}
-    />
-  )
+  return <img src={chevronUp} alt='' className={`w-7 ease-out ${classes}`} />
 }
 
 export function InstagramIcon() {
