@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <Header parallaxScroll={parallaxScroll} />
-      <main className='  h-screen overflow-hidden relative'>
+      <main className='  h-dvh overflow-hidden relative'>
         <Parallax
           ref={parallaxRef}
           pages={totalPages}

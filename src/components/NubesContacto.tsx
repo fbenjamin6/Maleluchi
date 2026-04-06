@@ -8,7 +8,7 @@ export function NubesContacto({ offset }: { offset: number }) {
     <>
       <ParallaxLayer style={{ top: '0.9%' }} speed={0.07} offset={offset}>
         <img
-          src='./src/assets/nubesContacto3.svg'
+          src={nubesContacto3}
           alt=''
           className='lg:w-[120%] xl:w-full imgParallax'
         />
