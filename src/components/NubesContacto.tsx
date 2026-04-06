@@ -1,4 +1,6 @@
 import { ParallaxLayer } from '@react-spring/parallax'
+import nubesContacto2 from '../assets/nubesContacto2.svg'
+import nubesContacto1 from '../assets/nubesContacto1.svg'
 
 export function NubesContacto({ offset }: { offset: number }) {
   return (
@@ -16,7 +18,7 @@ export function NubesContacto({ offset }: { offset: number }) {
         offset={offset}
       >
         <img
-          src='./src/assets/nubesContacto2.svg'
+          src={nubesContacto2}
           alt=''
           className='lg:w-[120%] xl:w-full imgParallax'
         />
@@ -27,7 +29,7 @@ export function NubesContacto({ offset }: { offset: number }) {
         offset={offset}
       >
         <img
-          src='./src/assets/nubesContacto1.svg'
+          src={nubesContacto1}
           alt=''
           className='lg:w-[120%] xl:w-full imgParallax'
           style={{ zIndex: 3 }}

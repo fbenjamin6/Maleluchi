@@ -1,7 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { NubesHero } from '../components/NubesHero'
-import { PhoneIcon, WhatsAppIcon } from '../components/Icons'
+import { PhoneIcon } from '../components/Icons'
+import heroImg from '../assets/maleluchiHero.webp'
 
 export function Hero({
   parallaxScroll,
@@ -16,7 +14,7 @@ export function Hero({
       >
         <div className='z-20 relative flex flex-col gap-7 items-center'>
           <img
-            src='./src/assets/maleluchiHero.webp'
+            src={heroImg}
             alt=''
             className='xl:w-[760px] sm:w-[620px] w-[300px]'
           />

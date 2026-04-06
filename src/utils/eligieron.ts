@@ -1,44 +1,59 @@
+import bresh from '../assets/carousel/carouselBresh.jpg'
+import eBresh from '../assets/carousel/esquinaBresh.png'
+import MC from '../assets/carousel/carouselMC.jpg'
+import eMC from '../assets/carousel/esquinaMC.png'
+import AJ from '../assets/carousel/carouselAJ.jpg'
+import eAJ from '../assets/carousel/esquinaAJ.png'
+import u21 from '../assets/carousel/carousel21.jpg'
+import eU21 from '../assets/carousel/esquina21.png'
+import BBVA from '../assets/carousel/carouselBBVA.jpg'
+import eBBVA from '../assets/carousel/esquinaBBVA.png'
+import atlanta from '../assets/carousel/carouselAtlanta.jpg'
+import eAtlanta from '../assets/carousel/esquinaAtlanta.png'
+import AGS from '../assets/carousel/carouselAGS.jpg'
+import eAGS from '../assets/carousel/esquinaAGS.png'
+
 export const eligieron = [
   {
     id: 1,
-    url: './src/assets/carousel/carouselBresh.jpg',
+    url: bresh,
     title: 'BRESH',
-    urlEsquina: './src/assets/carousel/esquinaBresh.png',
+    urlEsquina: eBresh,
   },
   {
     id: 2,
-    url: './src/assets/carousel/carouselMC.jpg',
+    url: MC,
     title: 'MC DONALDS',
-    urlEsquina: './src/assets/carousel/esquinaMC.png',
+    urlEsquina: eMC,
   },
   {
     id: 3,
-    url: './src/assets/carousel/carouselAJ.jpg',
+    url: AJ,
     title: 'ASOCIACIÓN ATLÉTICA ARGENTINOS JUNIORS',
-    urlEsquina: './src/assets/carousel/esquinaAJ.png',
+    urlEsquina: eAJ,
   },
   {
     id: 4,
-    url: './src/assets/carousel/carousel21.jpg',
+    url: u21,
     title: 'UNIVERSIDAD SIGLO 21',
-    urlEsquina: './src/assets/carousel/esquina21.png',
+    urlEsquina: eU21,
   },
   {
     id: 5,
-    url: './src/assets/carousel/carouselBBVA.jpg',
+    url: BBVA,
     title: 'BBVA',
-    urlEsquina: './src/assets/carousel/esquinaBBVA.png',
+    urlEsquina: eBBVA,
   },
   {
     id: 6,
-    url: './src/assets/carousel/carouselAtlanta.jpg',
+    url: atlanta,
     title: 'CLUB ATLÉTICO ATLANTA',
-    urlEsquina: './src/assets/carousel/esquinaAtlanta.png',
+    urlEsquina: eAtlanta,
   },
   {
     id: 7,
-    url: './src/assets/carousel/carouselAGS.jpg',
+    url: AGS,
     title: 'AGS',
-    urlEsquina: './src/assets/carousel/esquinaAGS.png',
+    urlEsquina: eAGS,
   },
 ]

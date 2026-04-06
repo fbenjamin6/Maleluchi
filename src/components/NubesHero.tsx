@@ -1,4 +1,9 @@
 import { ParallaxLayer } from '@react-spring/parallax'
+import nubesHero5 from '../assets/nubesHero5.svg'
+import nubesHero4 from '../assets/nubesHero4.svg'
+import nubesHero3 from '../assets/nubesHero3.svg'
+import nubesHero2 from '../assets/nubesHero2.svg'
+import nubesHero1 from '../assets/nubesHero1.svg'
 
 export function NubesHero() {
   return (
@@ -10,7 +15,7 @@ export function NubesHero() {
         className='top-[0%]! md:top-[0%]'
       >
         <img
-          src='./src/assets/nubesHero5.svg'
+          src={nubesHero5}
           alt=''
           className=' lg:w-[120%] xl:w-full imgParallax'
         />
@@ -22,7 +27,7 @@ export function NubesHero() {
         className='top-[12%]! md:top-[10%]!'
       >
         <img
-          src='./src/assets/nubesHero4.svg'
+          src={nubesHero4}
           alt=''
           className=' lg:w-[120%] xl:w-full imgParallax'
         />
@@ -34,7 +39,7 @@ export function NubesHero() {
         className='top-[30%]! md:top-[30%]!'
       >
         <img
-          src='./src/assets/nubesHero3.svg'
+          src={nubesHero3}
           alt=''
           className=' lg:w-[120%] xl:w-full imgParallax'
           style={{ zIndex: 3 }}
@@ -47,7 +52,7 @@ export function NubesHero() {
         className='top-[50%]! md:top-[50%]!'
       >
         <img
-          src='./src/assets/nubesHero2.svg'
+          src={nubesHero2}
           alt=''
           className=' lg:w-[120%] xl:w-full imgParallax'
         />
@@ -59,7 +64,7 @@ export function NubesHero() {
         className='top-[70%]! md:top-[70%]!'
       >
         <img
-          src='./src/assets/nubesHero1.svg'
+          src={nubesHero1}
           alt=''
           className=' lg:w-[120%] xl:w-full imgParallax'
         />

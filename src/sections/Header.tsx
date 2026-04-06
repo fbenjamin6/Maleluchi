@@ -1,5 +1,6 @@
 import { Parallax } from '@react-spring/parallax'
 import { useState } from 'react'
+import logo from '../assets/logoMaleluchi.png'
 
 export function Header({
   parallaxScroll,
@@ -20,11 +21,7 @@ export function Header({
         <nav className='max-w-[950px] xl:max-w-[1150px] w-full justify-between items-end lg:items-center flex max-lg:flex-col max-lg:justify-start  max-lg:gap-5'>
           <div className='flex max-lg:shrink-0 max-lg:h-[70px] max-lg:w-full  justify-between px-5'>
             <button className='cursor-pointer' onClick={() => handleScroll(0)}>
-              <img
-                className='w-[60px]'
-                src='./src/assets/logoMaleluchi.png'
-                alt='Logo de Maleluchi'
-              />
+              <img className='w-[60px]' src={logo} alt='Logo de Maleluchi' />
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}

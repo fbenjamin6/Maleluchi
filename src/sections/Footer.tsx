@@ -1,4 +1,5 @@
 import { InstagramIcon, WhatsAppIcon } from '../components/Icons'
+import maleluchiLogo from '../assets/logoMaleluchi.svg'
 
 export function Footer({
   parallaxScroll,
@@ -77,7 +78,7 @@ export function Footer({
             </div>
 
             <img
-              src='./src/assets/logoMaleluchi.svg'
+              src={maleluchiLogo}
               className='max-md:w-1/5 max-sm:w-1/4'
               alt=''
             />
