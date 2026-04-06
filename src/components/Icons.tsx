@@ -1,5 +1,5 @@
-import chevronRight from '../assets/ChevronArrowRight.svg'
-import chevronUp from '../assets/ChevronArrowUp.svg'
+import chevronRight from '../assets/chevronArrowRight.svg'
+import chevronUp from '../assets/chevronArrowUp.svg'
 
 export function QuoteIcon() {
   return (
