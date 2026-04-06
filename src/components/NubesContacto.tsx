@@ -1,4 +1,5 @@
 import { ParallaxLayer } from '@react-spring/parallax'
+import nubesContacto3 from '../assets/nubesContacto3.svg'
 import nubesContacto2 from '../assets/nubesContacto2.svg'
 import nubesContacto1 from '../assets/nubesContacto1.svg'
 
