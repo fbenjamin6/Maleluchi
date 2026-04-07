@@ -7,13 +7,14 @@ export function Contacto() {
   const [telValue, setTelValue] = useState('')
   const [consultaValue, setConsultaValue] = useState('')
 
-  const body = encodeURIComponent(`Nombre: ${nameValue}, 
-    Localidad: ${localidadValue},
-    Email: ${emailValue},
-    Teléfono: ${telValue},
+  const body = encodeURIComponent(`
+Nombre: ${nameValue}, 
+Localidad: ${localidadValue},
+Email: ${emailValue},
+Teléfono: ${telValue},
 
-    ${consultaValue}
-    `)
+${consultaValue}
+`)
   const mailto = `mailto:maleluchi@hotmail.com?subject=Consulta%20Maleluchi%20Web&body=${body}`
 
   return (
