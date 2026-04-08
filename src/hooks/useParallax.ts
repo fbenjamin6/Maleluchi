@@ -28,8 +28,8 @@ export function useParallax() {
       }
 
       if (width >= 500) {
+        factorHandle()
       }
-      factorHandle()
 
       setPagesFactor(newPagesFactor)
 

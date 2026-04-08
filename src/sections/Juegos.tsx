@@ -27,9 +27,9 @@ export function Juegos({
               className={`w-full bg-[url(${image})] bg-cover text-white aspect-square rounded-xl border-3 sm:border-4 border-[#FFC625] overflow-hidden flex group drop-shadow-[0px_1px_2px_rgba(0,0,0,0.60)] md:drop-shadow-[0px_2px_4px_rgba(0,0,0,0.60)]`}
               style={{ backgroundImage: `url(${image})` }}
             >
-              <div className='bg-black/60 flex flex-col  px-4 pt-2 pb-4  transition-all duration-400 group-hover:h-full h-[46px] w-full self-end group-hover:pt-12 sm:group-hover:pt-16 xl:group-hover:pt-36'>
+              <div className='bg-black/60 flex flex-col  px-4 pt-2 pb-4  transition-all duration-400 group-active:h-full sm:group-hover:h-full h-[46px] w-full self-end group-hover:pt-12 sm:group-hover:pt-16 xl:group-hover:pt-36'>
                 <h4 className='text-2xl font-medium '>{nombre}</h4>
-                <div className='flex flex-col gap-1.5 -mt-0.5 opacity-0 group-hover:opacity-100 transition-opacity'>
+                <div className='flex flex-col gap-1.5 -mt-0.5 opacity-0 group-active sm:group-hover:opacity-100 transition-opacity'>
                   <p className='text-gray-300 text-base font-light max-w-28 leading-none'>
                     {dimensiones}
                   </p>
