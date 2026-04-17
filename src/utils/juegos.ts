@@ -39,7 +39,7 @@ export const juegos = [
   {
     id: 5,
     nombre: 'Jenga Gigante',
-    dimensiones: '2,74 m x 1,52 m x 76 cm',
+    dimensiones: '',
     image: jenga,
   },
   {
@@ -51,7 +51,7 @@ export const juegos = [
   {
     id: 7,
     nombre: 'Plaza Blanda',
-    dimensiones: '2,74 m x 1,52 m x 76 cm',
+    dimensiones: '7 elementos con piso de goma eva',
     image: plazaBlanda,
   },
   {
@@ -63,14 +63,13 @@ export const juegos = [
   {
     id: 9,
     nombre: 'Karaoke',
-    dimensiones:
-      '2 bafles profesionales y trípodes, consola, dos micrófonos inalámbricos profesionales y pies de micrófono, proyector y pantalla',
+    dimensiones: '',
     image: karaoke,
   },
   {
     id: 10,
     nombre: 'Dardos',
-    dimensiones: '2,74 m x 1,52 m x 76 cm',
+    dimensiones: '',
     image: dardos,
   },
   {
