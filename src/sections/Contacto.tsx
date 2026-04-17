@@ -43,6 +43,7 @@ ${consultaValue}
                 id=''
                 placeholder='Nombre'
                 className='border-2 border-neutral-950/60 shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-2 px-3 rounded-xl bg-white text-lg'
+                required
               />
               <input
                 onChange={(e) => setLocalidadValue(e.target.value)}
@@ -52,6 +53,7 @@ ${consultaValue}
                 id=''
                 placeholder='Localidad'
                 className='border-2 border-neutral-950/60 shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-2 px-3 rounded-xl bg-white text-lg'
+                required
               />
               <input
                 onChange={(e) => setEmailValue(e.target.value)}
@@ -61,6 +63,7 @@ ${consultaValue}
                 id=''
                 placeholder='Email'
                 className='border-2 border-neutral-950/60 shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-2 px-3 rounded-xl bg-white text-lg'
+                required
               />
               <input
                 onChange={(e) => setTelValue(e.target.value)}
@@ -70,6 +73,7 @@ ${consultaValue}
                 id=''
                 placeholder='Número de celular'
                 className='border-2 border-neutral-950/60 shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-2 px-3 rounded-xl bg-white text-lg'
+                required
               />
             </div>
             <textarea
@@ -79,6 +83,7 @@ ${consultaValue}
               id=''
               placeholder='Consulta'
               className='border-2 border-neutral-950/60 shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-1.5 px-3 rounded-xl bg-white md:w-1/2 text-lg max-md:h-32'
+              required
             ></textarea>
             {/* <button
               // type='submit'
