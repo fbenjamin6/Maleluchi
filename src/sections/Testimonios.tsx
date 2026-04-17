@@ -18,9 +18,8 @@ export function Testimonios() {
         >
           TESTIMONIOS
         </h3>
-        <div className='text-center text-lg'>
-          <p>Lo que los clientes dicen de nosotros.</p>
-          <p>Sus opiniones son fundamentales para ayudarnos a hacerlo bien.</p>
+        <div className='text-center text-lg xl:text-xl'>
+          <p>La experiencia de nuestros clientes en cada evento</p>
         </div>
       </div>
       <div

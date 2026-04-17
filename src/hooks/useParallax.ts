@@ -11,22 +11,24 @@ export function useParallax() {
   const [pagesFactor, setPagesFactor] = useState(base)
 
   useEffect(() => {
+    const height = window.innerHeight
+    const width = window.innerWidth
+    let newPagesFactor = base
+
+    function factorHandle() {
+      const baseFactors = width <= 639 ? baseMobile : base
+
+      const scale = 950 / height
+
+      newPagesFactor = baseFactors.map((f) => {
+        if (f === 5) return 0.5
+        return Number((f * scale).toFixed(2))
+      })
+    }
+
+    factorHandle()
+
     function adjustPageFactor() {
-      const height = window.innerHeight
-      const width = window.innerWidth
-      let newPagesFactor = base
-
-      function factorHandle() {
-        const baseFactors = width <= 639 ? baseMobile : base
-
-        const scale = 950 / height
-
-        newPagesFactor = baseFactors.map((f) => {
-          if (f === 5) return 0.5
-          return Number((f * scale).toFixed(2))
-        })
-      }
-
       if (width >= 500) {
         factorHandle()
       }

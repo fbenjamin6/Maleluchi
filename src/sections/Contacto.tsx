@@ -20,12 +20,18 @@ ${consultaValue}
   return (
     <>
       <section className='flex gap-5 sm:gap-10 items-center flex-col  '>
-        <h3
-          data-text='CONTACTO'
-          className='fredoka text-orange reborde relative '
-        >
-          CONTACTO
-        </h3>
+        <div className='flex flex-col gap-2 sm:gap-4 items-center '>
+          <h3
+            data-text='CONTACTO'
+            className='fredoka text-orange reborde relative '
+          >
+            CONTACTO
+          </h3>
+          <p className='text-lg xl:text-xl font-medium text-center max-sm:max-w-92'>
+            Consultanos y llevá diversión a tu próximo evento
+          </p>
+        </div>
+
         <div className='flex gap-4 flex-col py-3 sm:py-6 px-3 sm:px-8 shadow-[0_1px_4px_rgba(0,0,0,0.25)] rounded-[18px] w-full sm:w-6/8 backdrop-blur-xs'>
           <form action='' className='flex max-md:flex-col gap-3.5 pb-8'>
             <div className='flex flex-col gap-3 sm:gap-4 md:w-1/2'>

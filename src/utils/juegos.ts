@@ -15,25 +15,25 @@ export const juegos = [
   {
     id: 1,
     nombre: 'Ping Pong',
-    dimensiones: '2,74 m x 1,52 m x 76 cm',
+    dimensiones: '2.75 m x 1.50 m',
     image: pingPong,
   },
   {
     id: 2,
     nombre: 'Metegol',
-    dimensiones: '2,74 m x 1,52 m x 76 cm',
+    dimensiones: '1.40 m x 1 m',
     image: metegol,
   },
   {
     id: 3,
     nombre: 'Tejo',
-    dimensiones: '2,74 m x 1,52 m x 76 cm',
+    dimensiones: '1.60 m x 0.70 m',
     image: tejo,
   },
   {
     id: 4,
     nombre: 'Sapo',
-    dimensiones: '2,74 m x 1,52 m x 76 cm',
+    dimensiones: 'Incluye 5 monedas de bronce',
     image: sapo,
   },
   {
@@ -45,7 +45,7 @@ export const juegos = [
   {
     id: 6,
     nombre: 'Pool',
-    dimensiones: '2,74 m x 1,52 m x 76 cm',
+    dimensiones: '1.85 m x 1.10 m',
     image: pool,
   },
   {
@@ -57,13 +57,14 @@ export const juegos = [
   {
     id: 8,
     nombre: 'Inflable 6x3',
-    dimensiones: '2,74 m x 1,52 m x 76 cm',
+    dimensiones: '6 m x 3 m',
     image: inflable6,
   },
   {
     id: 9,
     nombre: 'Karaoke',
-    dimensiones: '2,74 m x 1,52 m x 76 cm',
+    dimensiones:
+      '2 bafles profesionales y trípodes, consola, dos micrófonos inalámbricos profesionales y pies de micrófono, proyector y pantalla',
     image: karaoke,
   },
   {
@@ -75,13 +76,13 @@ export const juegos = [
   {
     id: 11,
     nombre: 'Inflable 3x3',
-    dimensiones: '2,74 m x 1,52 m x 76 cm',
+    dimensiones: '3  m x 3 m',
     image: inflable3,
   },
   {
     id: 12,
     nombre: 'Mini Ping Pong',
-    dimensiones: '2,74 m x 1,52 m x 76 cm',
+    dimensiones: '1.85 m x 1.10 m',
     image: miniPingPong,
   },
 ]

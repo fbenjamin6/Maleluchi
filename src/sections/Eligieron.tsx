@@ -26,9 +26,8 @@ export function Eligieron() {
         >
           ELLOS NOS ELIGIERON
         </h3>
-        <p className='text-lg text-center max-sm:max-w-92'>
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s
+        <p className='text-lg xl:text-xl text-center max-sm:max-w-92'>
+          Marcas que confiaron en nosotros para sus eventos
         </p>
       </div>
 

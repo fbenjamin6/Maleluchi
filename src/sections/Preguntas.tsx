@@ -39,9 +39,9 @@ export function Preguntas() {
         >
           PREGUNTAS FRECUENTES
         </h3>
-        <p className='text-center max-w-92 text-lg'>
+        <p className='text-center max-w-100 text-lg xl:text-xl'>
           Si tenes alguna pregunta que no se encuentra en la lista, no dudes en
-          consultarnos!
+          consultarnos
         </p>
       </div>
 

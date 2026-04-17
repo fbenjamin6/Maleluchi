@@ -14,9 +14,8 @@ export function Juegos({
         >
           NUESTROS JUEGOS
         </h3>
-        <p className='text-lg text-center max-sm:max-w-92'>
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s
+        <p className='text-lg xl:text-xl text-center max-sm:max-w-92'>
+          Opciones ideales para que todos se diviertan
         </p>
       </div>
       <div className='cardsGrid '>
@@ -30,7 +29,7 @@ export function Juegos({
               <div className='bg-black/60 flex flex-col  px-4 pt-2 pb-4  transition-all duration-400 group-active:h-full sm:group-hover:h-full h-[46px] w-full self-end group-hover:pt-12 sm:group-hover:pt-16 xl:group-hover:pt-36'>
                 <h4 className='text-2xl font-medium '>{nombre}</h4>
                 <div className='flex flex-col gap-1.5 -mt-0.5 opacity-0 group-active sm:group-hover:opacity-100 transition-opacity'>
-                  <p className='text-gray-300 text-base font-light max-w-28 leading-none'>
+                  <p className='text-gray-300 text-base font-light max-w-32 leading-none'>
                     {dimensiones}
                   </p>
                   <button
