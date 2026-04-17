@@ -26,12 +26,8 @@ export function useParallax() {
       })
     }
 
-    factorHandle()
-
     function adjustPageFactor() {
-      if (width >= 500) {
-        factorHandle()
-      }
+      factorHandle()
 
       setPagesFactor(newPagesFactor)
 
@@ -42,8 +38,14 @@ export function useParallax() {
 
     adjustPageFactor()
 
-    window.addEventListener('resize', adjustPageFactor)
-    return () => window.removeEventListener('resize', adjustPageFactor)
+    function handleResize() {
+      if (width >= 550) {
+        adjustPageFactor()
+      }
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
   }, [])
 
   function parallaxScroll(n: number) {
