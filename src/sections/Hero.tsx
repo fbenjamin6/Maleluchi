@@ -21,10 +21,10 @@ export function Hero({
 
           <h2
             id='textHero'
-            data-text='CUMPLEAÑOS, CASAMIENTOS, ANIVERSARIOS, COMUNIONES Y MÁS!'
-            className=' font-semibold sm:text-xl xl:text-2xl text-white tracking-widest  max-w-[640px] reborde-sm fredoka text-center'
+            data-text='CUMPLEAÑOS, CASAMIENTOS, ANIVERSARIOS, EVENTOS CORPORATIVOS Y MÁS!'
+            className=' font-semibold text-md sm:text-xl xl:text-2xl text-white tracking-widest  max-w-[640px] reborde-sm fredoka text-center'
           >
-            CUMPLEAÑOS, CASAMIENTOS, ANIVERSARIOS, COMUNIONES Y MÁS!
+            CUMPLEAÑOS, CASAMIENTOS, ANIVERSARIOS, EVENTOS CORPORATIVOS Y MÁS!
           </h2>
 
           <div className='flex gap-4 sm:gap-6 lg:gap-8  justify-evenly'>

@@ -63,7 +63,7 @@ export const juegos = [
   {
     id: 9,
     nombre: 'Karaoke',
-    dimensiones: '',
+    dimensiones: ``,
     image: karaoke,
   },
   {
@@ -80,7 +80,7 @@ export const juegos = [
   },
   {
     id: 12,
-    nombre: 'Mini Ping Pong',
+    nombre: 'Mini PingPong',
     dimensiones: '1.85 m x 1.10 m',
     image: miniPingPong,
   },

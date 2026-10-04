@@ -14,17 +14,21 @@ export function PreguntaAcordeon({
   pregunta: string
   respuesta: string
 }) {
-  const { pHeight, pRef } = useAccordion()
+  const { pHeight, pRef, qRef, qHeight } = useAccordion()
 
   return (
     <div
       className={`flex flex-col rounded-2xl max-sm:gap-1.5 max-sm:w-full  w-7/8 p-5 gap-2.5 transition-all duration-400 cursor-pointer border-2 border-black/15 shadow-[0_4px_4px_rgba(0,0,0,0.25)] overflow-hidden h-[var(--h)]  ${
         isOpen ? 'bg-[#FDE4A0]' : 'bg-[#FFFCF2]'
       }`}
-      style={{ ['--h' as any]: isOpen ? `${pHeight + 74 + 5}px` : '74px' }}
+      style={{
+        ['--h' as any]: isOpen
+          ? `${pHeight + qHeight + 40}px`
+          : `${qHeight + 40}px`,
+      }}
       onClick={() => openHandler({ id })}
     >
-      <div className='flex justify-between'>
+      <div className='flex justify-between' ref={qRef}>
         <h4
           data-text={pregunta}
           className='fredoka reborde-sm text-orange text-lg sm:text-xl md:text-2xl '

@@ -70,6 +70,9 @@ h1 {
 h3.fredoka {
   font-size: 48px;
 }
+h4 {
+  font-size: 40px;
+}
 
 textarea {
   resize: none;

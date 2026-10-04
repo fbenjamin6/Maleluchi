@@ -1,6 +1,7 @@
 import { Parallax } from '@react-spring/parallax'
 import { useState } from 'react'
 import logo from '../assets/logoMaleluchi.png'
+import { Link } from 'wouter'
 
 export function Header({
   parallaxScroll,
@@ -66,6 +67,14 @@ export function Header({
               >
                 CONTACTO
               </button>
+            </li>
+            <li className=''>
+              <Link
+                href='/servicios'
+                className='text-white hover:text-[#F5B501] transition-colors duration-300 cursor-pointer'
+              >
+                SERVICIOS
+              </Link>
             </li>
           </ul>
         </nav>

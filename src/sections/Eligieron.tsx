@@ -22,7 +22,7 @@ export function Eligieron() {
       <div className='flex flex-col gap-2 sm:gap-4 items-center '>
         <h3
           data-text='ELLOS NOS ELIGIERON'
-          className='fredoka  text-orange reborde relative mt-10'
+          className='fredoka  text-orange reborde relative mt-10 text-center'
         >
           ELLOS NOS ELIGIERON
         </h3>

@@ -45,7 +45,7 @@ export function Preguntas() {
         </p>
       </div>
 
-      <div className='flex flex-col w-full items-center gap-4 sm:gap-6 '>
+      <div className='flex flex-col w-full items-center gap-4 sm:gap-6 min-h-[490px]'>
         {preguntas.map(({ id, pregunta, respuesta }) => {
           return (
             <PreguntaAcordeon

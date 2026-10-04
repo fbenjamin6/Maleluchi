@@ -114,3 +114,107 @@ export function WhatsappSVG() {
     </svg>
   )
 }
+
+export function ConfettiSVG() {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='40'
+      height='40'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#6ed0ff'
+      stroke-width='2'
+      stroke-linecap='round'
+      stroke-linejoin='round'
+    >
+      <path d='M4 5h2' />
+      <path d='M5 4v2' />
+      <path d='M11.5 4l-.5 2' />
+      <path d='M18 5h2' />
+      <path d='M19 4v2' />
+      <path d='M15 9l-1 1' />
+      <path d='M18 13l2 -.5' />
+      <path d='M18 19h2' />
+      <path d='M19 18v2' />
+      <path d='M14 16.518l-6.518 -6.518l-4.39 9.58a1 1 0 0 0 1.329 1.329l9.579 -4.39z' />
+    </svg>
+  )
+}
+
+export function TortaSVG() {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='32'
+      height='32'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#6ed0ff'
+      stroke-width='2'
+      stroke-linecap='round'
+      stroke-linejoin='round'
+    >
+      <path d='M3 20h18v-8a3 3 0 0 0 -3 -3h-12a3 3 0 0 0 -3 3v8z' />
+      <path d='M3 14.803c.312 .135 .654 .204 1 .197a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1c.35 .007 .692 -.062 1 -.197' />
+      <path d='M12 4l1.465 1.638a2 2 0 1 1 -3.015 .099l1.55 -1.737z' />
+    </svg>
+  )
+}
+
+export function CorazonSVG() {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='32'
+      height='32'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#6ed0ff'
+      stroke-width='2'
+      stroke-linecap='round'
+      stroke-linejoin='round'
+    >
+      <path d='M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572' />
+    </svg>
+  )
+}
+
+export function EstrellaSVG() {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='32'
+      height='32'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#6ed0ff'
+      stroke-width='2'
+      stroke-linecap='round'
+      stroke-linejoin='round'
+    >
+      <path d='M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z' />
+    </svg>
+  )
+}
+
+export function MaletinSVG() {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='40'
+      height='40'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='#F5B501'
+      stroke-width='2'
+      stroke-linecap='round'
+      stroke-linejoin='round'
+    >
+      <path d='M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z' />
+      <path d='M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2' />
+      <path d='M12 12l0 .01' />
+      <path d='M3 13a20 20 0 0 0 18 0' />
+    </svg>
+  )
+}

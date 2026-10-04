@@ -1,8 +1,8 @@
 import { IParallax } from '@react-spring/parallax'
 import { useRef, useState, useEffect } from 'react'
 
-const base = [0.8, 1, 1.1, 1.25, 0.75, 0.6, 0.9, 0.5]
-const baseMobile = [0.7, 0.7, 1, 1.2, 0.7, 0.63, 0.9, 0.4]
+const base = [0.8, 1, 1.1, 1.25, 0.77, 0.6, 0.9, 0.5]
+const baseMobile = [0.7, 0.7, 1, 1.2, 0.8, 0.63, 0.95, 0.35]
 // hero, eligieron, juegos, testimonios, preguntas, nsotros, contacto, footer
 
 export function useParallax() {
